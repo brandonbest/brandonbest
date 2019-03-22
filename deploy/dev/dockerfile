@@ -14,7 +14,8 @@ RUN apt-get update \
 # Install Node
 RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash - \
     && apt -y install nodejs \
-    && npm install
+    && npm install \
+    && npm install @fortawesome/fontawesome-free
 
 # Install required php packages
 RUN docker-php-ext-install mbstring pdo_mysql

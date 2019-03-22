@@ -1,26 +1,19 @@
 @extends('layout.base')
+@section('content')
+    @section('header')
+        @include('layout.header.nav-default')
+    @show
 
-@section('header')
-    <nav class="navbar">
-        <a class="navbar-brand" href="{{ route('home') }}">
-            <img src="{{ url('/images/logos/brandon-best.png') }}" height="40" alt="Brandon Best" />
-        </a>
-    </nav>
-@endsection
+    @section('nav')
+        @include('layout.header.nav-secondary-default')
+    @show
 
-@section('nav')
-    <nav class="navbar navbar-findcond">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="{{ url('home') }}">GuestBook</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="{{ url('sign') }}">Sign the GuestBook</a>
-                    </li>
-                </ul>
-            </div>
+    @yield('body')
+
+    @section('footer')
+        <div class="footer">
+            @include('layout.footer.top-default')
+            @include('layout.footer.bottom-default')
         </div>
-    </nav>
+    @show
 @endsection

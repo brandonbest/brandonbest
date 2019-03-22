@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "@chenfengyuan/vue-carousel": "^1.0.1",
+        "@fortawesome/fontawesome-free": "^5.8.1",
         "vue-template-compiler": "^2.6.9"
     }
 }

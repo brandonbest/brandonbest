@@ -18,10 +18,7 @@
 
 <body>
     <div id="app">
-        @yield('header')
-        @yield('nav')
-        @yield('body')
-        @yield('footer')
+        @yield('content')
     </div>
     @section('js-footer')
         <script src="{{ mix('js/app.js') }}"></script>
