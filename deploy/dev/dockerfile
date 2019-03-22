@@ -1,0 +1,23 @@
+# Use an official PHP runtime as parent
+FROM php:${PHP_VERSION:-7.2}-fpm
+
+# Make Sure we are Up To Date
+RUN apt-get update \
+	&& apt install -y p7zip \
+    p7zip-full \
+    zip \
+    unzip \
+    curl \
+    gnupg \
+    nginx
+
+# Install Node
+RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash - \
+    && apt -y install nodejs \
+    && npm install
+
+# Install required php packages
+RUN docker-php-ext-install mbstring pdo_mysql
+
+# Update nginx
+# ADD ./dev/etc/nginx/nginx.conf /etc/nginx/nginx.conf
