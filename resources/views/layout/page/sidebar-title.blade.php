@@ -1,9 +1,6 @@
-<div class="page-title mt-4 mb-4">
+<div class="page-sidebar-title mt-4 mb-1">
     <div class="row">
-        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 d-flex align-items-center">
-            <i class="{{ $icon }}"></i>
-        </div>
-        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             @if (isset($pretitle) AND $pretitle)
                 <p>{!! $pretitle !!}</p>
             @endif

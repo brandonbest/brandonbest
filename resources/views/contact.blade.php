@@ -1,7 +1,7 @@
 @extends('layout.public')
 
 @section('body')
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
             <div class="col-lg-7 col-md-12">
                 @include('layout.page.title', ['title' => 'Contact Us', 'subtitle' => 'Question? Comments? We\'re happy to help!', 'icon' => 'far fa-paper-plane'])
@@ -63,7 +63,45 @@
                     </div>
                 </form>
             </div>
-            <div class="col-lg-5 d-none d-lg-block"></div>
+
+            {{-- SIDEBAR --}}
+            <div class="col-lg-4 offset-md-1 page-sidebar d-none d-lg-block">
+                <div class="row mt-4">
+                    <div class="col">
+                        <div class="card bg-light">
+                            <div class="card-body pt-0">
+                                @include('layout.page.sidebar-title', ['title' => 'Status Updates'])
+                                <p class="mt-1">Check my social media and Github for current projects and updates.</p>
+                                <p class="text-center mb-0">
+                                    <a href="https://www.facebook.com/dreamideation" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.twitter.com/dreamideation" target="_blank"><i class="fab fa-twitter"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        @include('layout.page.sidebar-title', ['title' => 'Contact Us'])
+                        <ul class="list-group">
+                            <li class="list-group-item p-2 pl-5"><i class="fa fa-phone"></i> (602) 910-5898</li>
+                            <li class="list-group-item p-1 pl-5"><i class="fa fa-envelope"></i> info@BrandonBest.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        @include('layout.page.sidebar-title', ['title' => 'Work Hours'])
+                        <ul class="list-group">
+                            <li class="list-group-item p-2 pl-5"><i class="fa fa-clock"></i> 4:45 AM - 4:15 PM AZ</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            {{-- SIDEBAR --}}
         </div>
     </div>
 @endsection
@@ -71,7 +109,6 @@
 @section('js-footer')
     @parent
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function() {
             'use strict';
             window.addEventListener('load', function() {

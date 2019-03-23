@@ -1,15 +1,25 @@
+.text-blue {
+    color: $theme-primary;
+}
+
+/* Page Title
+-------------------------------------------------------*/
 .page-title {
     border-bottom: 1px solid #f4f4f4;
 }
 .page-title h1,
 .page-title h2 {
-    color: $theme-primary;
+    color: $theme-grey;
     font-weight: 300;
     font-size: 32px;
     line-height: 32px;
 }
+.page-title h1 span,
+.page-title h2 span {
+    color: $theme-primary;
+}
 .page-title p {
-    color: #777;
+    color: $theme-grey;
     font-size: 14px;
     font-weight: 100;
 }
@@ -18,4 +28,73 @@
 .page-title .far {
     color: $theme-primary;
     font-size: 25px;
+}
+
+.page-sidebar {
+    font-weight: 100;
+}
+
+/* Sidebar Title
+-------------------------------------------------------*/
+.page-sidebar-title {
+    border-bottom: 1px solid #f4f4f4;
+}
+.page-sidebar-title h1,
+.page-sidebar-title h2 {
+    color: $theme-grey;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 4px;
+}
+.page-sidebar-title h1 span,
+.page-sidebar-title h2 span {
+    color: $theme-primary;
+}
+.page-sidebar-title p {
+    color: $theme-grey;
+    font-size: 14px;
+    font-weight: 100;
+}
+.page-sidebar-title .fa,
+.page-sidebar-title .fab,
+.page-sidebar-title .far {
+    color: $theme-primary;
+    font-size: 25px;
+}
+
+.page-sidebar .card .fab {
+    width: 30px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    background-color: $theme-primary;
+    display: inline-block;
+    padding: 8px 0;
+    color: #fff;
+}
+.page-sidebar .card .fab:hover {
+    background-color: $theme-primary-dark;
+}
+
+/* Sidebar Cards
+-------------------------------------------------------*/
+.page-sidebar .card.bg-light {
+    border: 0;
+}
+
+/* Sidebar List Groups
+-------------------------------------------------------*/
+.page-sidebar .list-group-item {
+    border: 0;
+}
+
+.page-sidebar .list-group .fa {
+    font-size: 18px;
+    margin-right: 9px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 0;
+    color: $theme-primary;
 }

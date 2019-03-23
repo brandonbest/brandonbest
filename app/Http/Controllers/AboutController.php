@@ -8,11 +8,11 @@ class AboutController extends Controller
 {
     public function experience()
     {
-        return view('home');
+        return view('about.experience');
     }
 
     public function about()
     {
-        return view('home');
+        return view('about.about');
     }
 }
