@@ -2,7 +2,7 @@
     <div class="container footer-top-first">
         <div class="row">
             {{-- SERVICES --}}
-            <div class="col">
+            <div class="col-lg-4 col-md-12">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title"><span class="text-white">My</span> Services</h5>
@@ -23,25 +23,29 @@
             {{-- SERVICES --}}
 
             {{-- SOCIAL MEDIA --}}
-            <div class="col">
+            <div class="col-lg-4 col-md-12 col-md-12 d-none d-lg-block col-social-media">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title"><span class="text-white">Social</span> Media</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">
+                            <a href="https://www.facebook.com/dreamideation" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.twitter.com/dreamideation" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a class="modal-skype-open"><i class="fab fa-skype"></i></a>
+                        </p>
                     </div>
                 </div>
             </div>
             {{-- SOCIAL MEDIA --}}
 
             {{-- CONTACT US --}}
-            <div class="col">
+            <div class="col-lg-4 col-md-12">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title"><span class="text-white">Contact</span> Brandon</h5>
                         <ul class="list-group">
-                            <li class="list-group-item p-1"><i class="fa fa-phone"></i> (602) 910-5898</li>
-                            <li class="list-group-item p-1"><i class="fa fa-envelope"></i> info@DreamIdeation.com</li>
-                            <li class="list-group-item p-1"><span><i class="fa fa-road"></i></span> <span>Recker & Elliot<br />Gilbert, AZ 85296</span></li>
+                            <li class="list-group-item p-2 pl-5"><i class="fa fa-phone"></i> (602) 910-5898</li>
+                            <li class="list-group-item p-1 pl-5"><i class="fa fa-envelope"></i> info@DreamIdeation.com</li>
+                            <li class="list-group-item p-1 pl-5"><i class="fa fa-road"></i> Recker & Elliot<br />Gilbert, AZ 85296</li>
                         </ul>
                     </div>
                 </div>

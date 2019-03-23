@@ -10,18 +10,21 @@
 .navbar-primary .nav-item a {
     color: #777777;
 }
-.navbar-primary.navbar-light .navbar-nav .nav-link {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 36px 30px 6px;
-    font-weight: 300;
-    text-transform: none;
-    font-size: 16px;
-    border-bottom: 3px solid #fff !important;
-}
-.navbar-primary.navbar-light .navbar-nav .nav-link:hover {
-    border-color: #ccc !important;
-    color: #777777;
+
+@media (min-width: 768px) {
+    .navbar-primary.navbar-light .navbar-nav .nav-link {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding: 36px 30px 6px;
+        font-weight: 300;
+        text-transform: none;
+        font-size: 16px;
+        border-bottom: 3px solid #fff !important;
+    }
+    .navbar-primary.navbar-light .navbar-nav .nav-link:hover {
+        border-color: #ccc !important;
+        color: #777777;
+    }
 }
 .navbar-primary.navbar-light .navbar-nav .active > .nav-link {
     color: $theme-primary;

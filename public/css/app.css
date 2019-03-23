@@ -17423,19 +17423,21 @@ readers do not read off random characters that represent icons */
   color: #777777;
 }
 
-.navbar-primary.navbar-light .navbar-nav .nav-link {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding: 36px 30px 6px;
-  font-weight: 300;
-  text-transform: none;
-  font-size: 16px;
-  border-bottom: 3px solid #fff !important;
-}
+@media (min-width: 768px) {
+  .navbar-primary.navbar-light .navbar-nav .nav-link {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 36px 30px 6px;
+    font-weight: 300;
+    text-transform: none;
+    font-size: 16px;
+    border-bottom: 3px solid #fff !important;
+  }
 
-.navbar-primary.navbar-light .navbar-nav .nav-link:hover {
-  border-color: #ccc !important;
-  color: #777777;
+  .navbar-primary.navbar-light .navbar-nav .nav-link:hover {
+    border-color: #ccc !important;
+    color: #777777;
+  }
 }
 
 .navbar-primary.navbar-light .navbar-nav .active > .nav-link {
@@ -17489,12 +17491,15 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-.footer .card-title {
+/* Footer Top Section
+------------------------------------------------------------------------------------------------*/
+
+.footer .footer-top .card-title {
   border-bottom: 1px solid #8db8dc;
   padding-bottom: 5px;
 }
 
-.footer .card-body {
+.footer .footer-top .card-body {
   padding: 0;
 }
 
@@ -17503,15 +17508,36 @@ readers do not read off random characters that represent icons */
   border: none;
 }
 
+.footer .footer-top .col-social-media a {
+  background: #8db8dc;
+  color: #075f98;
+  font-size: 20px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 5px;
+  width: 35px;
+  text-align: center;
+  padding: 4px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.footer .footer-top .col-social-media a:hover {
+  background: #fff;
+}
+
 .footer .footer-top .footer-top-first {
   padding-top: 50px;
   padding-bottom: 30px;
 }
 
-.footer .footer-top .fa {
+.footer .footer-top .card .list-group .fa {
   font-size: 20px;
-  vertical-align: middle;
   margin-right: 10px;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: 0;
 }
 
 .footer .footer-top hr {
@@ -17524,7 +17550,20 @@ readers do not read off random characters that represent icons */
   padding-bottom: 40px;
 }
 
+/* Footer Bottom Section
+------------------------------------------------------------------------------------------------*/
+
 .footer .footer-bottom {
   background-color: #065487;
+  font-size: 12px;
+}
+
+.footer .footer-bottom .nav-link.disabled {
+  color: #fff;
+}
+
+.footer .footer-bottom img {
+  max-height: 18px;
+  width: auto;
 }
 
