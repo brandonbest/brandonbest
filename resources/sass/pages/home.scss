@@ -1,0 +1,90 @@
+.container-home-first {
+    background-image: url(/images/backgrounds/trees-sky-background.jpg);
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    position: relative;
+}
+@media (max-width: 768px) {
+    .container-home-first {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+@media (max-width: 550px) {
+    .container-home-first {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+/* Top Home Section
+--------------------------------------------------------------------------------*/
+.container-home-first .background-white {
+    background: rgba(255,255,255, .8);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.container-home-first .card {
+    border: 0;
+    overflow: hidden;
+}
+.container-home-first .card .card-body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+}
+.container-home-first .card .card-body > a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.container-home-first .card .card-icon {
+    color: $theme-primary;
+    font-size: 60px;
+}
+.container-home-first .card .card-title {
+    color: #000;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+.card-text {
+    font-weight: 100;
+    color: #888;
+}
+.container-home-first .card:hover .card-body {
+    background: $theme-primary;
+    color: #fff;
+}
+.container-home-first .card:hover .card-icon {
+    color: #fff;
+}
+.container-home-first .card:hover .card-title {
+    color: $theme-secondary;
+}
+.container-home-first .card:hover .card-text {
+    color: #eee;
+}
+
+/* Second Home Section
+--------------------------------------------------------------------------------*/
+.container-home-second {
+}
+.container-home-second img {
+    max-height: 350px;
+}
+.container-home-second h2,
+.container-home-second h5 {
+    color: $theme-primary;
+}
+
+/* Third Home Section (Portfolio)
+--------------------------------------------------------------------------------*/
+.container-home-third {
+
+}

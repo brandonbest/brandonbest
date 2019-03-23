@@ -44,7 +44,7 @@
                         <h5 class="card-title"><span class="text-white">Contact</span> Brandon</h5>
                         <ul class="list-group">
                             <li class="list-group-item p-2 pl-5"><i class="fa fa-phone"></i> (602) 910-5898</li>
-                            <li class="list-group-item p-1 pl-5"><i class="fa fa-envelope"></i> info@DreamIdeation.com</li>
+                            <li class="list-group-item p-1 pl-5"><i class="fa fa-envelope"></i> info@BrandonBest.com</li>
                             <li class="list-group-item p-1 pl-5"><i class="fa fa-road"></i> Recker & Elliot<br />Gilbert, AZ 85296</li>
                         </ul>
                     </div>
