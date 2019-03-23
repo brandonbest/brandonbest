@@ -74,17 +74,25 @@
 /* Second Home Section
 --------------------------------------------------------------------------------*/
 .container-home-second {
+    color: #fff;
+    background-color: $theme-primary;
 }
 .container-home-second img {
     max-height: 350px;
+    max-width: 100%;
 }
 .container-home-second h2,
 .container-home-second h5 {
-    color: $theme-primary;
+    color: $theme-secondary;
 }
 
 /* Third Home Section (Portfolio)
 --------------------------------------------------------------------------------*/
 .container-home-third {
 
+}
+.container-home-third h2,
+.container-home-third h3,
+.container-home-third h4 {
+    color: $theme-primary;
 }
