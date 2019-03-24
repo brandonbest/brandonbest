@@ -4,7 +4,7 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col-lg-7 col-md-12">
-                @include('layout.page.title', ['title' => 'Contact Us', 'subtitle' => 'Question? Comments? We\'re happy to help!', 'icon' => 'far fa-paper-plane'])
+                @include('layout.page.title', ['title' => 'Contact Me', 'subtitle' => 'Question? Comments? I\'m happy to help!', 'icon' => 'far fa-paper-plane'])
 
                 <form class="needs-validation" novalidate>
                     <div class="form-row">
@@ -14,7 +14,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroupPrepend"><i class="far fa-user-circle"></i></span>
                                 </div>
-                                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" required />
+                                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" autocomplete="given-name" required />
                                 <div class="invalid-feedback">
                                     First Name Required
                                 </div>
@@ -26,7 +26,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroupPrepend"><i class="far fa-user-circle"></i></span>
                                 </div>
-                                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" />
+                                <input type="text" class="form-control" id="inputLastName" autocomplete="family-name" placeholder="Last Name" />
                             </div>
                         </div>
                     </div>
@@ -37,19 +37,19 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroupPrepend"><i class="far fa-envelope"></i></span>
                                 </div>
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email" />
+                                <input type="email" class="form-control" id="inputEmail" autocomplete="email" placeholder="Email" />
                             </div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col">
-                            <label for="inputMessage" class="text-muted">Write Us a Message</label>
+                            <label for="inputMessage" class="text-muted">Write Me a Message</label>
 
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroupPrepend"><i class="far fa-sticky-note"></i></span>
                                 </div>
-                                <textarea name="inputMessage" class="form-control" id="inputMessage" rows="7" placeholder="Enter your message here..." required></textarea>
+                                <textarea name="inputMessage" class="form-control" id="inputMessage" rows="7" autocomplete="off" placeholder="Enter your message here..." required></textarea>
                                 <div class="invalid-feedback">
                                     Please write a message
                                 </div>
@@ -73,6 +73,7 @@
                                 @include('layout.page.sidebar-title', ['title' => 'Status Updates'])
                                 <p class="mt-1">Check my social media and Github for current projects and updates.</p>
                                 <p class="text-center mb-0">
+                                    <a href="https://www.facebook.com/dreamideation" target="_blank"><i class="fab fa-linkedin"></i></a>
                                     <a href="https://www.facebook.com/dreamideation" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                     <a href="https://www.twitter.com/dreamideation" target="_blank"><i class="fab fa-twitter"></i></a>
                                 </p>
@@ -83,7 +84,7 @@
 
                 <div class="row">
                     <div class="col">
-                        @include('layout.page.sidebar-title', ['title' => 'Contact Us'])
+                        @include('layout.page.sidebar-title', ['title' => 'Contact Brandon'])
                         <ul class="list-group">
                             <li class="list-group-item p-2 pl-5"><i class="fa fa-phone"></i> (602) 910-5898</li>
                             <li class="list-group-item p-1 pl-5"><i class="fa fa-envelope"></i> info@BrandonBest.com</li>

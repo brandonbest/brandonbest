@@ -1,3 +1,8 @@
+h2, h5 {
+    color: $theme-primary;
+    font-weight: 300;
+}
+
 .text-blue {
     color: $theme-primary;
 }
@@ -14,6 +19,15 @@
     font-size: 32px;
     line-height: 32px;
 }
+
+@media (max-width: 450px) {
+    .page-title h1,
+    .page-title h2 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+}
+
 .page-title h1 span,
 .page-title h2 span {
     color: $theme-primary;
@@ -25,11 +39,24 @@
 }
 .page-title .fa,
 .page-title .fab,
-.page-title .far {
+.page-title .far,
+.page-title .fas {
     color: $theme-primary;
     font-size: 25px;
 }
 
+/* Container Dark
+-------------------------------------------------------*/
+.container-dark {
+    background: $theme-primary;
+    color: #fff;
+}
+.container-dark h2 {
+    color: $theme-secondary;
+}
+
+/* Sidebar
+-------------------------------------------------------*/
 .page-sidebar {
     font-weight: 100;
 }

@@ -48,7 +48,7 @@
 
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link disabled" tabindex="-1" aria-disabled="true">Designed by Brandon Best &copy; {{ date('Y') }}</a>
+                        <a class="nav-link disabled p-0 pb-2" tabindex="-1" aria-disabled="true">Designed by Brandon Best &copy; {{ date('Y') }}</a>
                     </li>
                 </ul>
             </div>
