@@ -13,6 +13,7 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/experience', 'AboutController@experience')->name('experience');
+Route::get('/skills', 'AboutController@skills')->name('skills');
 Route::get('/about', 'AboutController@about')->name('about');
 
 Route::get('/services', 'ServicesController@index')->name('services');

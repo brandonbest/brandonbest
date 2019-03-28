@@ -12,197 +12,127 @@
     <div class="container">
         <div class="row">
             <div class="timeline col">
-                <h2 class="mb-4">Skills</h2>
 
                 {{-- FIRST SECTION --}}
                 <div class="row align-items-center timeline-end d-flex">
                     <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
-                        <div class="circle font-weight-bold">4</div>
+                        <div class="circle font-weight-bold"><i class="fas fa-server"></i></div>
                     </div>
-                    <div class="col-6">
-                        <h5 class="m-0">Leadership</h5>
-                        <p class="m-0">Degree: Biochemistry</p>
-                        <p class="m-0">Graduated cum laude</p>
+                    <div class="col-9">
+                        <h5 class="m-0">Automated Deployment and Containers</h5>
+                        <p class="m-0">Building and Deploying Docker containers on multiple workstations</p>
                     </div>
                 </div>
                 {{-- FIRST SECTION --}}
 
-                {{-- PATH BETWEEN 1-2 --}}
-                <div class="row timeline-item">
-                    <div class="col-2">
-                        <div class="corner top-right"></div>
-                    </div>
-                    <div class="col-8">
-                        <hr/>
-                    </div>
-                    <div class="col-2">
-                        <div class="corner left-bottom"></div>
-                    </div>
-                </div>
-                {{-- PATH BETWEEN 1-2 --}}
+                @include('components.timeline.left-right')
 
                 {{-- SECOND SECTION --}}
                 <div class="row align-items-center justify-content-end timeline-end d-flex">
-                    <div class="col-6 text-right">
-                        <h5 class="m-0">Programming</h5>
-                        <p class="m-0">Studied abroad in Australia, focused biochemistry and imunology.</p>
+                    <div class="col-9 text-right">
+                        <h5 class="m-0">Leadership</h5>
+                        <p class="m-0">Managing Teams 2 Workers</p>
                     </div>
                     <div class="col-2 text-center right full d-inline-flex justify-content-center align-items-center">
-                        <div class="circle font-weight-bold">3</div>
+                        <div class="circle font-weight-bold"><i class="fas fa-users"></i></div>
                     </div>
                 </div>
                 {{-- SECOND SECTION --}}
 
-                {{-- PATH BETWEEN 2-3 --}}
-                <div class="row timeline-item">
-                    <div class="col-2">
-                        <div class="corner right-bottom"></div>
-                    </div>
-                    <div class="col-8">
-                        <hr/>
-                    </div>
-                    <div class="col-2">
-                        <div class="corner top-left"></div>
-                    </div>
-                </div>
-                {{-- PATH BETWEEN 2-3 --}}
+                @include('components.timeline.right-left')
 
                 {{-- THIRD SECTION --}}
                 <div class="row align-items-center timeline-end d-flex">
                     <div class="col-2 text-center full left d-inline-flex justify-content-center align-items-center">
-                        <div class="circle font-weight-bold">2</div>
+                        <div class="circle font-weight-bold"><i class="fas fa-keyboard"></i></div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-9">
+                        <h5 class="m-0">Programming</h5>
+                        <p class="m-0">PHP and JS within Wordpress and Laravel</p>
+                    </div>
+                </div>
+                {{-- THIRD SECTION --}}
+
+                @include('components.timeline.left-right')
+
+                {{-- FOURTH SECTION --}}
+                <div class="row align-items-center justify-content-end timeline-end d-flex">
+                    <div class="col-9 text-right">
                         <h5 class="m-0">Website Design</h5>
-                        <p class="m-0">Graduted in top 5% of class of 370+.</p>
+                        <p class="m-0">Creating and Modifying Website Templates</p>
+                    </div>
+                    <div class="col-2 text-center right full d-inline-flex justify-content-center align-items-center">
+                        <div class="circle font-weight-bold"><i class="fas fa-palette"></i></div>
                     </div>
                 </div>
-                {{-- THIRD SECTION --}}
+                {{-- FOURTH SECTION --}}
 
-                {{-- PATH BETWEEN 3-4 --}}
-                <div class="row timeline-item">
-                    <div class="col-2">
-                        <div class="corner top-right"></div>
-                    </div>
-                    <div class="col-8">
-                        <hr/>
-                    </div>
-                    <div class="col-2">
-                        <div class="corner left-bottom"></div>
-                    </div>
-                </div>
-                {{-- PATH BETWEEN 3-4 --}}
+                @include('components.timeline.right-left')
 
                 {{-- THIRD SECTION --}}
                 <div class="row align-items-center timeline-end d-flex">
                     <div class="col-2 text-center full left d-inline-flex justify-content-center align-items-center">
-                        <div class="circle font-weight-bold">2</div>
+                        <div class="circle font-weight-bold"><i class="fas fa-server"></i></div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-9">
                         <h5 class="m-0">Server Setup</h5>
-                        <p class="m-0">Setup and managed servers.</p>
+                        <p class="m-0">cPanel and Command Line Server Management</p>
                     </div>
                 </div>
                 {{-- THIRD SECTION --}}
 
-                {{-- PATH BETWEEN 3-4 --}}
-                <div class="row timeline-item">
-                    <div class="col-2">
-                        <div class="corner top-right"></div>
-                    </div>
-                    <div class="col-8">
-                        <hr/>
-                    </div>
-                    <div class="col-2">
-                        <div class="corner left-bottom"></div>
-                    </div>
-                </div>
-                {{-- PATH BETWEEN 3-4 --}}
+                @include('components.timeline.left-right')
 
                 {{-- FOURTH SECTION --}}
                 <div class="row align-items-center justify-content-end timeline-end d-flex">
-                    <div class="col-6 text-right">
+                    <div class="col-9 text-right">
                         <h5 class="m-0">Marketing</h5>
+                        <p class="m-0">SEO and Social Media</p>
                     </div>
                     <div class="col-2 text-center top right d-inline-flex justify-content-center align-items-center">
-                        <div class="circle font-weight-bold">1</div>
+                        <div class="circle font-weight-bold"><i class="fas fa-broadcast-tower"></i></div>
                     </div>
                 </div>
                 {{-- FOURTH SECTION --}}
 
-                {{-- PATH BETWEEN 2-3 --}}
-                <div class="row timeline-item">
-                    <div class="col-2">
-                        <div class="corner right-bottom"></div>
-                    </div>
-                    <div class="col-8">
-                        <hr/>
-                    </div>
-                    <div class="col-2">
-                        <div class="corner top-left"></div>
-                    </div>
-                </div>
-                {{-- PATH BETWEEN 2-3 --}}
+                @include('components.timeline.right-left')
 
                 {{-- THIRD SECTION --}}
                 <div class="row align-items-center timeline-end d-flex">
                     <div class="col-2 text-center full left d-inline-flex justify-content-center align-items-center">
-                        <div class="circle font-weight-bold">2</div>
+                        <div class="circle font-weight-bold"><i class="fas fa-comment-dollar"></i></div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-9">
                         <h5 class="m-0">Sales</h5>
-                        <p class="m-0">Graduted in top 5% of class of 370+.</p>
+                        <p class="m-0">Education, Websites and IT Services</p>
                     </div>
                 </div>
                 {{-- THIRD SECTION --}}
 
-                {{-- PATH BETWEEN 3-4 --}}
-                <div class="row timeline-item">
-                    <div class="col-2">
-                        <div class="corner top-right"></div>
-                    </div>
-                    <div class="col-8">
-                        <hr/>
-                    </div>
-                    <div class="col-2">
-                        <div class="corner left-bottom"></div>
-                    </div>
-                </div>
-                {{-- PATH BETWEEN 3-4 --}}
+                @include('components.timeline.left-right')
 
                 {{-- FOURTH SECTION --}}
                 <div class="row align-items-center justify-content-end timeline-end d-flex">
-                    <div class="col-6 text-right">
+                    <div class="col-9 text-right">
                         <h5 class="m-0">CNA</h5>
+                        <p class="m-0">Patience and Kindness</p>
                     </div>
                     <div class="col-2 text-center top right d-inline-flex justify-content-center align-items-center">
-                        <div class="circle font-weight-bold">1</div>
+                        <div class="circle font-weight-bold"><i class="fas fa-stethoscope"></i></div>
                     </div>
                 </div>
                 {{-- FOURTH SECTION --}}
 
-                {{-- PATH BETWEEN 2-3 --}}
-                <div class="row timeline-item">
-                    <div class="col-2">
-                        <div class="corner right-bottom"></div>
-                    </div>
-                    <div class="col-8">
-                        <hr/>
-                    </div>
-                    <div class="col-2">
-                        <div class="corner top-left"></div>
-                    </div>
-                </div>
-                {{-- PATH BETWEEN 2-3 --}}
+                @include('components.timeline.right-left')
 
                 {{-- THIRD SECTION --}}
                 <div class="row align-items-center timeline-end d-flex">
                     <div class="col-2 text-center full left d-inline-flex justify-content-center align-items-center">
-                        <div class="circle font-weight-bold">2</div>
+                        <div class="circle font-weight-bold"><i class="fas fa-code"></i></div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-9">
                         <h5 class="m-0">Basic HTML & CSS</h5>
-                        <p class="m-0">Graduted in top 5% of class of 370+.</p>
+                        <p class="m-0">Coding an HTML Page with Tables and CSS</p>
                     </div>
                 </div>
                 {{-- THIRD SECTION --}}
@@ -210,13 +140,15 @@
         </div>
     </div>
 
-    <div class="container mb-6">
-        <div class="row mt-6 mb-3">
-            <div class="col">
-                <h2>Companies</h2>
+    <div class="container mt-6">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                @include('layout.page.title', ['title' => 'Companies', 'subtitle' => 'Brandon\'s Work History', 'icon' => 'far fa-building'])
             </div>
         </div>
+    </div>
 
+    <div class="container mb-6">
         <div class="row">
             <div class="col">
                 <div class="card-deck">

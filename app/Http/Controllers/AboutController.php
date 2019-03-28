@@ -25,4 +25,9 @@ class AboutController extends Controller
     {
         return view('about.about');
     }
+
+    public function skills()
+    {
+        return view('about.skills');
+    }
 }

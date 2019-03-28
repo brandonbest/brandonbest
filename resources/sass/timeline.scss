@@ -3,8 +3,17 @@
     border-radius: 50%;
     background-color: $theme-primary;
     color: #fff;
-    max-height: 50px;
+    max-height: 54px;
     z-index: 2;
+}
+.timeline h5 {
+    font-size: 20px;
+    padding-bottom: 2px;
+}
+.timeline p {
+    color: #999;
+    font-weight: 100;
+    line-height: 18px;
 }
 
 .timeline .timeline-item div {

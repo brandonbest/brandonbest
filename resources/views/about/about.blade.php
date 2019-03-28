@@ -28,19 +28,7 @@
                 </div>
                 {{-- FIRST SECTION --}}
 
-                {{-- PATH BETWEEN 1-2 --}}
-                <div class="row timeline-item">
-                    <div class="col-2">
-                        <div class="corner top-right"></div>
-                    </div>
-                    <div class="col-8">
-                        <hr/>
-                    </div>
-                    <div class="col-2">
-                        <div class="corner left-bottom"></div>
-                    </div>
-                </div>
-                {{-- PATH BETWEEN 1-2 --}}
+                @include('components.timeline.left-right')
 
                 {{-- SECOND SECTION --}}
                 <div class="row align-items-center justify-content-end timeline-end d-flex">
@@ -54,19 +42,7 @@
                 </div>
                 {{-- SECOND SECTION --}}
 
-                {{-- PATH BETWEEN 2-3 --}}
-                <div class="row timeline-item">
-                    <div class="col-2">
-                        <div class="corner right-bottom"></div>
-                    </div>
-                    <div class="col-8">
-                        <hr/>
-                    </div>
-                    <div class="col-2">
-                        <div class="corner top-left"></div>
-                    </div>
-                </div>
-                {{-- PATH BETWEEN 2-3 --}}
+                @include('components.timeline.right-left')
 
                 {{-- THIRD SECTION --}}
                 <div class="row align-items-center timeline-end d-flex">
@@ -80,19 +56,7 @@
                 </div>
                 {{-- THIRD SECTION --}}
 
-                {{-- PATH BETWEEN 3-4 --}}
-                <div class="row timeline-item">
-                    <div class="col-2">
-                        <div class="corner top-right"></div>
-                    </div>
-                    <div class="col-8">
-                        <hr/>
-                    </div>
-                    <div class="col-2">
-                        <div class="corner left-bottom"></div>
-                    </div>
-                </div>
-                {{-- PATH BETWEEN 3-4 --}}
+                @include('components.timeline.left-right')
 
                 {{-- FOURTH SECTION --}}
                 <div class="row align-items-center justify-content-end timeline-end d-flex">

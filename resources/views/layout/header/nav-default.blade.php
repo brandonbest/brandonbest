@@ -14,6 +14,9 @@
             <li class="nav-item {{ Route::currentRouteName() === 'about' ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('about') }}">About Me @if(Route::currentRouteName() === 'about')<span class="sr-only">(current)</span>@endif</a>
             </li>
+            <li class="nav-item {{ Route::currentRouteName() === 'skills' ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('skills') }}">Skills @if(Route::currentRouteName() === 'skills')<span class="sr-only">(current)</span>@endif</a>
+            </li>
             <li class="nav-item {{ Route::currentRouteName() === 'experience' ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('experience') }}">Experience @if(Route::currentRouteName() === 'about')<span class="sr-only">(current)</span>@endif</a>
             </li>
