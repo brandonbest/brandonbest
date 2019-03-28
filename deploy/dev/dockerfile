@@ -21,4 +21,6 @@ RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash - \
 RUN docker-php-ext-install mbstring pdo_mysql
 
 # Update nginx
-# ADD ./dev/etc/nginx/nginx.conf /etc/nginx/nginx.conf
+ADD ./dev/etc/nginx/nginx.conf /etc/nginx/nginx.conf
+
+RUN service nginx start &
