@@ -62,6 +62,7 @@
                 <div class="row align-items-center justify-content-end timeline-end d-flex">
                     <div class="col-6 text-right">
                         <h5 class="m-0">Grayslake Middle School</h5>
+                        <p class="m-0">Grayslake, IL</p>
                     </div>
                     <div class="col-2 text-center top right d-inline-flex justify-content-center align-items-center">
                         <div class="circle font-weight-bold">1</div>

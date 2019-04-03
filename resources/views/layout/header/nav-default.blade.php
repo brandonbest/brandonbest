@@ -11,9 +11,6 @@
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarMain">
         <ul class="navbar-nav">
-            <li class="nav-item {{ Route::currentRouteName() === 'about' ? 'active' : '' }}">
-                <a class="nav-link" href="{{ route('about') }}">About Me @if(Route::currentRouteName() === 'about')<span class="sr-only">(current)</span>@endif</a>
-            </li>
             <li class="nav-item {{ Route::currentRouteName() === 'skills' ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('skills') }}">Skills @if(Route::currentRouteName() === 'skills')<span class="sr-only">(current)</span>@endif</a>
             </li>
@@ -34,6 +31,9 @@
             </li>
             <li class="nav-item {{ Route::currentRouteName() === 'resume' ? 'active' : '' }}">
                 <a class="nav-link" href={{ route('resume') }}>Resume @if(Route::currentRouteName() === 'resume')<span class="sr-only">(current)</span>@endif</a>
+            </li>
+            <li class="nav-item {{ Route::currentRouteName() === 'about' ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('about') }}">About Me @if(Route::currentRouteName() === 'about')<span class="sr-only">(current)</span>@endif</a>
             </li>
             <li class="nav-item {{ Route::currentRouteName() === 'contact' ? 'active' : '' }}">
                 <a class="nav-link" href={{ route('contact') }}>Contact @if(Route::currentRouteName() === 'contact')<span class="sr-only">(current)</span>@endif</a>

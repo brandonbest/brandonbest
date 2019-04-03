@@ -328,10 +328,10 @@
 </div>
 
 
-<div class="container mb-6">
-    <div class="row mt-6 mb-3">
-        <div class="col">
-            <h2>Companies</h2>
+<div class="container mt-6">
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            @include('layout.page.title', ['title' => 'Companies', 'subtitle' => 'Brandon\'s Work History', 'icon' => 'far fa-building'])
         </div>
     </div>
 

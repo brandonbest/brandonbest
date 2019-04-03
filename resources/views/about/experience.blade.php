@@ -31,7 +31,7 @@
                 <div class="row align-items-center justify-content-end timeline-end d-flex">
                     <div class="col-9 text-right">
                         <h5 class="m-0">Leadership</h5>
-                        <p class="m-0">Managing Teams 2 Workers</p>
+                        <p class="m-0">Managing Developer Teams</p>
                     </div>
                     <div class="col-2 text-center right full d-inline-flex justify-content-center align-items-center">
                         <div class="circle font-weight-bold"><i class="fas fa-users"></i></div>
