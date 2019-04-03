@@ -11,14 +11,20 @@
 
 <div class="container">
     <div class="row mb-3">
+        <div class="col-12">
+            <h4>Coding Languages</h4>
+        </div>
+    </div>
+
+    <div class="row mb-3">
         <div class="col-6">
-            <label>CSS</label>
+            <h6>CSS</h6>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
         </div>
         <div class="col-6">
-            <label>HTML</label>
+            <h6>HTML</h6>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -27,60 +33,53 @@
 
     <div class="row mb-3">
         <div class="col-6">
-            <label>PHP</label>
+            <h6>PHP</h6>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">Laravel</li>
+                    <li class="list-group-item p-1 pl-3">Laravel Package Development</li>
+                    <li class="list-group-item p-1 pl-3">Wordpress</li>
+                    <li class="list-group-item p-1 pl-3">Wordpress Plugin Development</li>
+                    <li class="list-group-item p-1 pl-3">Symphony</li>
+                    <li class="list-group-item p-1 pl-3">Magento</li>
+                </ul>
+            </div>
         </div>
 
         <div class="col-6">
-            <label>JS</label>
+            <h6>JS</h6>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">jQuery</li>
+                    <li class="list-group-item p-1 pl-3">React</li>
+                    <li class="list-group-item p-1 pl-3">Angular</li>
+                    <li class="list-group-item p-1 pl-3">Vue</li>
+                </ul>
             </div>
         </div>
     </div>
 
     <div class="row mb-3">
-        <div class="col-6">
-            <label>jQuery</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>Angular</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+        <div class="col-12">
+            <h4>Databases and Cache</h4>
         </div>
     </div>
 
     <div class="row mb-3">
         <div class="col-6">
-            <label>React</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-        <div class="col-6">
-            <label>Vue.js</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>PostGres</label>
+            <h6>PostGres</h6>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
         </div>
         <div class="col-6">
-            <label>MySQL</label>
+            <h6>MySQL</h6>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -89,13 +88,13 @@
 
     <div class="row mb-3">
         <div class="col-6">
-            <label>Redis</label>
+            <h6>Redis</h6>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
         </div>
         <div class="col-6">
-            <label>Memcache</label>
+            <h6>Memcache</h6>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -103,14 +102,20 @@
     </div>
 
     <div class="row mb-3">
+        <div class="col-12">
+            <h4>Development Tools</h4>
+        </div>
+    </div>
+
+    <div class="row mb-3">
         <div class="col-6">
-            <label>Git</label>
+            <h6>Git</h6>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
         </div>
         <div class="col-6">
-            <label>Docker</label>
+            <h6>Docker</h6>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -119,34 +124,18 @@
 
     <div class="row mb-3">
         <div class="col-6">
-            <label>Linux Management</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-        <div class="col-6">
-            <label>Phonegap / Cordova</label>
+            <h6>Phonegap / Cordova</h6>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
         </div>
     </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Varnish</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
 </div>
 
 <div class="container">
     <div class="row">
         <div class="col-lg-12 col-md-12">
-            @include('layout.page.title', ['title' => 'Techology Experience', 'subtitle' => 'What technology have I used?', 'icon' => 'fas fa-server'])
+            @include('layout.page.title', ['title' => 'Production Ecosystems', 'subtitle' => 'How have I hosted and managed projects?', 'icon' => 'fas fa-server'])
         </div>
     </div>
 </div>
@@ -154,388 +143,188 @@
 <div class="container">
     <div class="row mb-3">
         <div class="col-6">
-            <label>Digital Ocean</label>
+            <h6>Server Management</h6>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">Linux</li>
+                    <li class="list-group-item p-1 pl-3">Buddy.works</li>
+                    <li class="list-group-item p-1 pl-3">Varnish</li>
+                    <li class="list-group-item p-1 pl-3">Email Setup and Management</li>
+                    <li class="list-group-item p-1 pl-3">Domain Setup and Management</li>
+                    <li class="list-group-item p-1 pl-3">SSL</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-6">
+            <h6>Server Hosts</h6>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-        </div>
-
-        <div class="col-6">
-            <label>Rackspace</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>AWS</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Github</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>Jira</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">Digital Ocean</li>
+                    <li class="list-group-item p-1 pl-3">Rackspace</li>
+                    <li class="list-group-item p-1 pl-3">AWS</li>
+                    <li class="list-group-item p-1 pl-3">cPanel</li>
+                </ul>
             </div>
         </div>
     </div>
 
     <div class="row mb-3">
         <div class="col-6">
-            <label>Laravel</label>
+            <h6>Project Mangement</h6>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">Jira</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-6">
+            <h6>Code Management</h6>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">Github</li>
+                    <li class="list-group-item p-1 pl-3">Gitlab</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                @include('layout.page.title', ['title' => 'Software Experience', 'subtitle' => 'What APIs and Software have I used?', 'icon' => 'fas fa-server'])
+            </div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-6">
+            <h6>Email Marketing</h6>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">Eloqua</li>
+                    <li class="list-group-item p-1 pl-3">Marketo</li>
+                    <li class="list-group-item p-1 pl-3">Sparkpost</li>
+                    <li class="list-group-item p-1 pl-3">Sendgrid</li>
+                    <li class="list-group-item p-1 pl-3">Mailchimp</li>
+                    <li class="list-group-item p-1 pl-3">Mandrill</li>
+                    <li class="list-group-item p-1 pl-3">Iterable</li>
+                    <li class="list-group-item p-1 pl-3">Pardot</li>
+                </ul>
             </div>
         </div>
 
         <div class="col-6">
-            <label>Wordpress</label>
+            <h6>Payment Processing</h6>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">Braintree</li>
+                    <li class="list-group-item p-1 pl-3">Stripe</li>
+                    <li class="list-group-item p-1 pl-3">Square</li>
+                    <li class="list-group-item p-1 pl-3">PayPal</li>
+                </ul>
             </div>
         </div>
     </div>
 
     <div class="row mb-3">
         <div class="col-6">
-            <label>Laravel Package Development</label>
+            <h6>CDN</h6>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="75"></div>
+            </div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">Cloudflare</li>
+                    <li class="list-group-item p-1 pl-3">Incapsula</li>
+                    <li class="list-group-item p-1 pl-3">MaxCDN</li>
+                    <li class="list-group-item p-1 pl-3">Cloudfront</li>
+                </ul>
             </div>
         </div>
-
         <div class="col-6">
-            <label>Wordpress Plugin Development</label>
+            <h6>CRM</h6>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="50"></div>
+            </div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">Salesforce</li>
+                    <li class="list-group-item p-1 pl-3">Zoho</li>
+                    <li class="list-group-item p-1 pl-3">SugarCRM</li>
+                </ul>
             </div>
         </div>
     </div>
 
     <div class="row mb-3">
         <div class="col-6">
-            <label>Magento</label>
+            <h6>Additional Technology</h6>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">Celigo</li>
+                    <li class="list-group-item p-1 pl-3">Netsuite</li>
+                    <li class="list-group-item p-1 pl-3">Zapier</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-6">
+            <h6>Social Media</h6>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">LinkedIn</li>
+                    <li class="list-group-item p-1 pl-3">Facebook</li>
+                    <li class="list-group-item p-1 pl-3">Twitter</li>
+                    <li class="list-group-item p-1 pl-3">Instagram</li>
+                    <li class="list-group-item p-1 pl-3">Vimeo</li>
+                    <li class="list-group-item p-1 pl-3">YouTube</li>
+                </ul>
             </div>
         </div>
     </div>
 
     <div class="row mb-3">
         <div class="col-6">
-            <label>Eloqua</label>
+            <h6>Google Platform</h6>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-        </div>
-
-        <div class="col-6">
-            <label>Marketo</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">Maps</li>
+                    <li class="list-group-item p-1 pl-3">Analytics</li>
+                    <li class="list-group-item p-1 pl-3">Doubleclick</li>
+                    <li class="list-group-item p-1 pl-3">Websmaster Tools</li>
+                    <li class="list-group-item p-1 pl-3">Calendar</li>
+                    <li class="list-group-item p-1 pl-3">Custom Search</li>
+                    <li class="list-group-item p-1 pl-3">Drive</li>
+                </ul>
             </div>
         </div>
     </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Sparkpost</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>Sendgrid</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Mailchimp</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>Mandrill</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Iterable</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>Pardot</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Braintree</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>Stripe</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Square</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Salesforce</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-        <div class="col-6">
-            <label>Zoho</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Celigo</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>LinkedIn</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>Facebook</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Twitter</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>Instagram</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Vimeo</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>YouTube</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Google Maps</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>Google Analytics</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Google Doubleclick</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>Google Webmaster Tools</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Google Calendar</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>Google Custom Search</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>WooCommerce</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>Zapier</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Google Spreadsheets</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Email Setup</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>Domain Setup</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>OpenSSH</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Cloudflare</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>Incapsula</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Domain Setup</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label>MaxCDN</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-6">
-            <label>Netsuite</label>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-
 </div>
 
 
