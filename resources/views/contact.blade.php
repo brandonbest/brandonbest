@@ -73,9 +73,9 @@
                                 @include('layout.page.sidebar-title', ['title' => 'Status Updates'])
                                 <p class="mt-1">Check my social media and Github for current projects and updates.</p>
                                 <p class="text-center mb-0">
-                                    <a href="https://www.facebook.com/dreamideation" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/bbest100/" target="_blank"><i class="fab fa-linkedin"></i></a>
                                     <a href="https://www.facebook.com/dreamideation" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.twitter.com/dreamideation" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://github.com/brandonbest" target="_blank"><i class="fab fa-github-alt"></i></a>
                                 </p>
                             </div>
                         </div>

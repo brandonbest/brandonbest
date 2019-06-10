@@ -16,7 +16,7 @@
     @yield('js')
 </head>
 
-<body>
+<body class="@yield('bodyClass')">
     <div id="app">
         @yield('content')
     </div>

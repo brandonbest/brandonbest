@@ -9,7 +9,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container container-skills">
     <div class="row mb-3">
         <div class="col-12">
             <h4>Coding Languages</h4>
@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <div class="row mb-3">
+    <div class="row mb-3 mt-5">
         <div class="col-12">
             <h4>Databases and Cache</h4>
         </div>
@@ -101,7 +101,7 @@
         </div>
     </div>
 
-    <div class="row mb-3">
+    <div class="row mb-3 mt-5">
         <div class="col-12">
             <h4>Development Tools</h4>
         </div>
@@ -132,15 +132,15 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container mt-5">
     <div class="row">
         <div class="col-lg-12 col-md-12">
-            @include('layout.page.title', ['title' => 'Production Ecosystems', 'subtitle' => 'How have I hosted and managed projects?', 'icon' => 'fas fa-server'])
+            @include('layout.page.title', ['title' => 'Production Workflow', 'subtitle' => 'How have I hosted and managed projects?', 'icon' => 'fas fa-server'])
         </div>
     </div>
 </div>
 
-<div class="container">
+<div class="container container-skills">
     <div class="row mb-3">
         <div class="col-6">
             <h6>Server Management</h6>
@@ -161,7 +161,7 @@
         <div class="col-6">
             <h6>Server Hosts</h6>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <div>
                 <ul class="list-group list-group-flush mt-2">
@@ -178,7 +178,7 @@
         <div class="col-6">
             <h6>Project Mangement</h6>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90"></div>
             </div>
             <div>
                 <ul class="list-group list-group-flush mt-2">
@@ -190,7 +190,7 @@
         <div class="col-6">
             <h6>Code Management</h6>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="85"></div>
             </div>
             <div>
                 <ul class="list-group list-group-flush mt-2">
@@ -204,7 +204,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12">
-                @include('layout.page.title', ['title' => 'Software Experience', 'subtitle' => 'What APIs and Software have I used?', 'icon' => 'fas fa-server'])
+                @include('layout.page.title', ['title' => 'Software Experience', 'subtitle' => 'What APIs and Software have I used?', 'icon' => 'fas fa-compact-disc'])
             </div>
         </div>
     </div>
@@ -212,7 +212,7 @@
         <div class="col-6">
             <h6>Email Marketing</h6>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <div>
                 <ul class="list-group list-group-flush mt-2">
@@ -231,7 +231,7 @@
         <div class="col-6">
             <h6>Payment Processing</h6>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <div>
                 <ul class="list-group list-group-flush mt-2">
@@ -248,7 +248,7 @@
         <div class="col-6">
             <h6>CDN</h6>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="75"></div>
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="75"></div>
             </div>
             <div>
                 <ul class="list-group list-group-flush mt-2">
@@ -262,7 +262,7 @@
         <div class="col-6">
             <h6>CRM</h6>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="50"></div>
+                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
             </div>
             <div>
                 <ul class="list-group list-group-flush mt-2">
@@ -276,15 +276,19 @@
 
     <div class="row mb-3">
         <div class="col-6">
-            <h6>Additional Technology</h6>
+            <h6>Google Platform</h6>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <div>
                 <ul class="list-group list-group-flush mt-2">
-                    <li class="list-group-item p-1 pl-3">Celigo</li>
-                    <li class="list-group-item p-1 pl-3">Netsuite</li>
-                    <li class="list-group-item p-1 pl-3">Zapier</li>
+                    <li class="list-group-item p-1 pl-3">Maps</li>
+                    <li class="list-group-item p-1 pl-3">Analytics</li>
+                    <li class="list-group-item p-1 pl-3">Doubleclick</li>
+                    <li class="list-group-item p-1 pl-3">Websmaster Tools</li>
+                    <li class="list-group-item p-1 pl-3">Calendar</li>
+                    <li class="list-group-item p-1 pl-3">Custom Search</li>
+                    <li class="list-group-item p-1 pl-3">Drive</li>
                 </ul>
             </div>
         </div>
@@ -308,19 +312,58 @@
 
     <div class="row mb-3">
         <div class="col-6">
-            <h6>Google Platform</h6>
+            <h6>Additional Technology</h6>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">Celigo</li>
+                    <li class="list-group-item p-1 pl-3">Netsuite</li>
+                    <li class="list-group-item p-1 pl-3">Zapier</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                @include('layout.page.title', ['title' => 'Other Skills', 'subtitle' => 'My non-work skills.', 'icon' => 'fas fa-tractor'])
+            </div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-6">
+            <h6>Landscaping</h6>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <div>
                 <ul class="list-group list-group-flush mt-2">
-                    <li class="list-group-item p-1 pl-3">Maps</li>
-                    <li class="list-group-item p-1 pl-3">Analytics</li>
-                    <li class="list-group-item p-1 pl-3">Doubleclick</li>
-                    <li class="list-group-item p-1 pl-3">Websmaster Tools</li>
-                    <li class="list-group-item p-1 pl-3">Calendar</li>
-                    <li class="list-group-item p-1 pl-3">Custom Search</li>
-                    <li class="list-group-item p-1 pl-3">Drive</li>
+                    <li class="list-group-item p-1 pl-3">Landscape Architecture</li>
+                    <li class="list-group-item p-1 pl-3">Electical</li>
+                    <li class="list-group-item p-1 pl-3">Gas</li>
+                    <li class="list-group-item p-1 pl-3">Turf Installation and Maintenance</li>
+                    <li class="list-group-item p-1 pl-3">Tree Maintenance</li>
+                    <li class="list-group-item p-1 pl-3">Irrigation Installation and Maintentance</li>
+                    <li class="list-group-item p-1 pl-3">Masonry Installation</li>
+                    <li class="list-group-item p-1 pl-3">Custom Counter Tops</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <h6>Wood Working</h6>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">Basic Furniture</li>
+                    <li class="list-group-item p-1 pl-3">Organization Units</li>
+                    <li class="list-group-item p-1 pl-3">Shelving</li>
+                    <li class="list-group-item p-1 pl-3">Built-ins</li>
                 </ul>
             </div>
         </div>
@@ -328,7 +371,7 @@
 </div>
 
 
-<div class="container mt-6">
+<div class="container container-skills mt-4 mb-6">
     <div class="row">
         <div class="col-lg-12 col-md-12">
             @include('layout.page.title', ['title' => 'Companies', 'subtitle' => 'Brandon\'s Work History', 'icon' => 'far fa-building'])

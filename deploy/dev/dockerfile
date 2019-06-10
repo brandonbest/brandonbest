@@ -1,15 +1,15 @@
-# Use an official PHP runtime as parent
-FROM php:${PHP_VERSION:-7.2}-fpm
+FROM webdevops/php-nginx:7.3
 
-# Make Sure we are Up To Date
+ENV WEB_DOCUMENT_ROOT "/var/www/html/public"
+
+# Use to Get Every Docker Container Ups
 RUN apt-get update \
 	&& apt install -y p7zip \
     p7zip-full \
     zip \
     unzip \
     curl \
-    gnupg \
-    nginx
+    gnupg
 
 # Install Node
 RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash - \
@@ -17,10 +17,14 @@ RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash - \
     && npm install \
     && npm install @fortawesome/fontawesome-free
 
-# Install required php packages
-RUN docker-php-ext-install mbstring pdo_mysql
+# Only used in some instances
+RUN apt install -y procps
 
-# Update nginx
+# Copy HTML File
 ADD ./dev/etc/nginx/nginx.conf /etc/nginx/nginx.conf
 
-RUN service nginx start
+# Disable services
+RUN docker-service-disable postfix \
+	&& docker-service-disable ssh \
+	&& docker-service-disable syslog \
+	&& docker-service-disable dnsmasq

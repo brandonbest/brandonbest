@@ -29,10 +29,9 @@
                         <h5 class="card-title"><span class="text-white">Social</span> Media</h5>
                         <p class="card-text">
                             <a href="https://github.com/brandonbest" target="_blank"><i class="fab fa-github-alt"></i></a>
-                            <a href="https://github.com/brandonbest" target="_blank"><i class="fab fa-stack-overflow"></i></a>
-                            <a href="https://www.facebook.com/dreamideation" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://stackoverflow.com/users/944074/dream-ideation" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+                            <a href="https://www.linkedin.com/in/bbest100/" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="https://www.facebook.com/dreamideation" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.twitter.com/dreamideation" target="_blank"><i class="fab fa-twitter"></i></a>
                             <a class="modal-skype-open"><i class="fab fa-skype"></i></a>
                         </p>
                     </div>

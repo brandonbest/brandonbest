@@ -11,4 +11,19 @@ class ServicesController extends Controller
         return view('home');
 
     }
+
+    public function seo()
+    {
+
+    }
+
+    public function marketing()
+    {
+
+    }
+
+    public function webDesign()
+    {
+
+    }
 }

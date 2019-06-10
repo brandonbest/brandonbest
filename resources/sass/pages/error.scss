@@ -1,0 +1,24 @@
+.container-error {
+    background: url('/images/backgrounds/background-error.jpg');
+    color: #fff;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.container-error h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 200;
+}
+.container-error h1 span {
+    color: #8db8dc;
+}
+.container-error ul a {
+    color: rgb(141, 184, 220);
+}
+.container-error ul,
+.container-error p {
+    font-weight: 300;
+}
