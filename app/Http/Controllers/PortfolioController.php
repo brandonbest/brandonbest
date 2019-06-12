@@ -8,7 +8,11 @@ class PortfolioController extends Controller
 {
     public function index()
     {
-        return view('home');
+        return view('portfolio.portfolio');
+    }
 
+    public function websites()
+    {
+        return view('portfolio.websites');
     }
 }

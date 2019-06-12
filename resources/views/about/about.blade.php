@@ -99,9 +99,9 @@
                 <p>Brandon recharges his batteries by spending time outside in nature. His favorite activites include hiking, backpacking and skiing. After the birth of Isla, Brandon and Amanada take Isla on monthly hikes with Isla riding on Brandon's back.</p>
                 <p>When Brandon is home for a weekend, he enjoys spending his free time landscaping and woodworking. He designed and installed his entire backyard including pavers, a gas fire pit, raised gardening beds and an archway to grow grapes. He is currently adding trim throughout the Best home.</p>
                 <p>
-                    <a href="" class="btn btn-primary">Hiking</a>
-                    <a href="" class="btn btn-outline-primary">Backyard</a>
-                    <a href="" class="btn btn-outline-primary">Wood Work</a>
+                    <a href="{{ route('about.hiking') }}" class="btn btn-primary">Hiking</a>
+                    <a href="{{ route('about.backyard') }}" class="btn btn-outline-primary">Backyard</a>
+                    <a href="{{ route('about.wood-working') }}" class="btn btn-outline-primary">Wood Work</a>
                 </p>
             </div>
             <div class="col-md-6 col-sm-12 d-md-none">

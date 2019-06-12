@@ -8,7 +8,17 @@ class ServicesController extends Controller
 {
     public function index()
     {
-        return view('home');
+        return view('services.services');
+
+    }
+
+    public function consulting()
+    {
+
+    }
+
+    public function emailHosting()
+    {
 
     }
 
@@ -17,12 +27,18 @@ class ServicesController extends Controller
 
     }
 
-    public function marketing()
+
+    public function programming()
     {
 
     }
 
     public function webDesign()
+    {
+
+    }
+
+    public function webHosting()
     {
 
     }

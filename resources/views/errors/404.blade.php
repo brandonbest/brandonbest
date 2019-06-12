@@ -7,12 +7,7 @@
             <h1>404 <span>Error</span></h1>
             <p>You have reached a page that does not exist! Use one of the links below to get back on track.</p>
             <p>&nbsp;</p>
-            <ul class="list-unstyled">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('services') }}">Services</a></li>
-                <li><a href="{{ route('about') }}">About Us</a></li>
-                <li><a href="{{ route('contact') }}">Contact Us</a></li>
-            </ul>
+            @include('errors._links')
         </div>
     </div>
 </div>

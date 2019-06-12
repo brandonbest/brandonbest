@@ -30,4 +30,19 @@ class AboutController extends Controller
     {
         return view('about.skills');
     }
+
+    public function backyard()
+    {
+        return view('about.backyard');
+    }
+
+    public function hiking()
+    {
+        return view('about.hiking');
+    }
+
+    public function woodWorking()
+    {
+        return view('about.woodworking');
+    }
 }

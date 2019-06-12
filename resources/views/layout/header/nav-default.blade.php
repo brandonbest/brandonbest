@@ -23,8 +23,8 @@
             <li class="nav-item d-lg-none {{ Route::currentRouteName() === 'portfolio' ? 'active' : '' }}">
                 <a class="nav-link" href={{ route('portfolio') }}>Portfolio @if(Route::currentRouteName() === 'portfolio')<span class="sr-only">(current)</span>@endif</a>
             </li>
-            <li class="nav-item d-lg-none {{ Route::currentRouteName() === 'websites' ? 'active' : '' }}">
-                <a class="nav-link" href={{ route('websites') }}>Websites @if(Route::currentRouteName() === 'websites')<span class="sr-only">(current)</span>@endif</a>
+            <li class="nav-item d-lg-none {{ Route::currentRouteName() === 'portfolio.websites' ? 'active' : '' }}">
+                <a class="nav-link" href={{ route('portfolio.websites') }}>Websites @if(Route::currentRouteName() === 'portfolio.websites')<span class="sr-only">(current)</span>@endif</a>
             </li>
             <li class="nav-item d-lg-none {{ Route::currentRouteName() === 'blog' ? 'active' : '' }}">
                 <a class="nav-link" href={{ route('blog') }}>Blog @if(Route::currentRouteName() === 'blog')<span class="sr-only">(current)</span>@endif</a>

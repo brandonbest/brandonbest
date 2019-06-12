@@ -8,13 +8,14 @@
                         <h5 class="card-title"><span class="text-white">My</span> Services</h5>
                         <div class="row">
                             <div class="col">
-                                <p class="mb-1"><a href="">Hosting</a></p>
-                                <p class="mb-1"><a href="">Programming</a></p>
+                                <p class="mb-1"><a href="{{ route('services.consulting') }}">Consulting</a></p>
+                                <p class="mb-1"><a href="{{ route('services.web-hosting') }}">Web Hosting</a></p>
+                                <p class="mb-1"><a href="{{ route('services.programming') }}">Programming</a></p>
                             </div>
                             <div class="col">
-                                <p class="mb-1"><a href="">Email Hosting</a></p>
-                                <p class="mb-1"><a href="">Design</a></p>
-                                <p class="mb-1"><a href="">SEO</a></p>
+                                <p class="mb-1"><a href="{{ route('services.email-hosting') }}">Email Hosting</a></p>
+                                <p class="mb-1"><a href="{{ route('services.web-design') }}">Design</a></p>
+                                <p class="mb-1"><a href="{{ route('services.seo') }}">SEO</a></p>
                             </div>
                         </div>
                     </div>

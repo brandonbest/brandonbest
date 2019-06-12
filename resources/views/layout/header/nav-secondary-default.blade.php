@@ -8,8 +8,8 @@
                 <li class="nav-item {{ Route::currentRouteName() === 'portfolio' ? 'active' : '' }}">
                     <a class="nav-link" href={{ route('portfolio') }}>Portfolio</a>
                 </li>
-                <li class="nav-item {{ Route::currentRouteName() === 'websites' ? 'active' : '' }}">
-                    <a class="nav-link" href={{ route('websites') }}>Websites</a>
+                <li class="nav-item {{ Route::currentRouteName() === 'portfolio.websites' ? 'active' : '' }}">
+                    <a class="nav-link" href={{ route('portfolio.websites') }}>Websites</a>
                 </li>
                 <li class="nav-item {{ Route::currentRouteName() === 'blog' ? 'active' : '' }}">
                     <a class="nav-link" href={{ route('blog') }}>Blog</a>

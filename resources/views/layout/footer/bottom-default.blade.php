@@ -4,16 +4,16 @@
             <div class="col">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="{{ url('/images/logos/brandon-best-white-icon.png') }}" alt="Brandon Best" /></a>
+                        <a class="nav-link" href="{{ url('/') }}"><img src="{{ url('/images/logos/brandon-best-white-icon.png') }}" alt="Brandon Best" /></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Site Map</a>
+                        <a class="nav-link" href="{{ route('sitemap') }}">Site Map</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Privacy</a>
+                        <a class="nav-link" href="{{ route('legal.privacy') }}">Privacy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Terms of Use</a>
+                        <a class="nav-link" href="{{ route('legal.terms') }}">Terms of Use</a>
                     </li>
                 </ul>
             </div>
@@ -33,16 +33,16 @@
             <div class="col">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="{{ url('/images/logos/brandon-best-white-icon.png') }}" alt="Brandon Best" /></a>
+                        <a class="nav-link" href="{{ url('/') }}"><img src="{{ url('/images/logos/brandon-best-white-icon.png') }}" alt="Brandon Best" /></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Site Map</a>
+                        <a class="nav-link" href="{{ route('sitemap') }}">Site Map</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Privacy</a>
+                        <a class="nav-link" href="{{ route('legal.privacy') }}">Privacy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Terms of Use</a>
+                        <a class="nav-link" href="{{ route('legal.terms') }}">Terms of Use</a>
                     </li>
                 </ul>
 
