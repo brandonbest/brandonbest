@@ -16,3 +16,4 @@ mix.js('resources/js/app.js', 'public/js')
     .sourceMaps();
 
 mix.copyDirectory( 'resources/assets/images', 'public/images' );
+mix.copyDirectory( 'resources/assets/resumes', 'public/resumes' );
