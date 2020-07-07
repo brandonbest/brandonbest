@@ -17,9 +17,7 @@
 </head>
 
 <body class="@yield('bodyClass')">
-    <div id="app">
-        @yield('content')
-    </div>
+    @yield('content')
     @section('js-footer')
         <script src="{{ mix('js/app.js') }}"></script>
     @show

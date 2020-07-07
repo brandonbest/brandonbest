@@ -65,6 +65,48 @@
         </div>
     </div>
 
+    <div class="row mb-3">
+        <div class="col-6">
+            <h6>PHP</h6>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">Laravel</li>
+                    <li class="list-group-item p-1 pl-3">Laravel Package Development</li>
+                    <li class="list-group-item p-1 pl-3">Wordpress</li>
+                    <li class="list-group-item p-1 pl-3">Wordpress Plugin Development</li>
+                    <li class="list-group-item p-1 pl-3">Symphony</li>
+                    <li class="list-group-item p-1 pl-3">Magento</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <h6>JS</h6>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item p-1 pl-3">jQuery</li>
+                    <li class="list-group-item p-1 pl-3">React</li>
+                    <li class="list-group-item p-1 pl-3">Angular</li>
+                    <li class="list-group-item p-1 pl-3">Vue</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-6">
+            <h6>Python</h6>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="25"></div>
+            </div>
+        </div>
+    </div>
+
     <div class="row mb-3 mt-5">
         <div class="col-12">
             <h4>Databases and Cache</h4>

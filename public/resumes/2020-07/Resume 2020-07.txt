@@ -1,0 +1,42 @@
+Built engineering team and architected technology stack that manages
+2.5 million page views / month, 15 million email sends / month, 
+and $9 million in transactions / year. Turned unreliable tech stack 
+with no testing, spreadsheet ticket tracking, and monolithic code 
+structure into a modern development workflow including Confluence 
+documentation, dockerized continuous deployment, AWS infrastructure, 
+error notifications, unit testing, quality control, and sprint planning 
+running in a microservice architecture.
+
+• Identify and prioritize business objects; turn ideas into roadmaps; 
+  architech code/database design; document
+  requirements for scalability; manage timeline expections and 
+  maintain budgets.
+• Identified technical debt and created roadmap to gradually repay it.
+• Hire, mentor and set quarterly performance goals for team members.
+• Integrate Upwork contractors for one-off and ongoing projects.
+• Optimized and documented workflows to scale a growing team.
+• Dockerized all core code repositories.
+• Improved reliability by migrating to AWS with no downtime.
+• Transitioned team to agile workflow. Increased project visibility 
+  throughout organization through sprint planning and email updates,
+  resulting in improved confidence from leadership and stakkeholders.
+• Architected platform to collect and report billions of event statistics 
+  to individual sponsors for sales growth and key advantage of Bisnow
+  over competitors.
+• Designed and implemented scalable marketing platform for 350 
+  live events and 1,200 webinars per year in Marketo.
+• Designed and implemented scalable newsletter subscription and 
+  delivery platform for 105 active newsletters.
+• Integrated ad sales and delivery platform for newsletters/website 
+  including delivering targeted ads to segments of our audience. 
+
+
+
+Key Points:
+
+1. Built an engineering team
+2. Implemented automated testing and continuous deployment
+3. Architeched microservice architechure between multiple services
+4. Reliability improvements of tech stack
+5. Integrated tracking and reporting on clicks/impressions
+6. Scalable marketing, tracking and checkout for events/webinars

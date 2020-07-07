@@ -1,0 +1,30 @@
+version: '3'
+services:
+
+    # BrandonBest.com Application
+    brandonbest:
+        container_name: brandonbest
+        build:
+            context: ./
+            dockerfile: ./dockerfile
+        environment:
+            DB_HOST: mariadb
+            VIRTUAL_HOST: "brandonbest.test"
+            VIRTUAL_PORT: "3104"
+        expose:
+            - 3104
+        external_links:
+            - "redis:redis"
+            - "mariadb:mariadb"
+            - "api.brandonbest:api.brandonbest.test"
+        ports:
+            - 3104:3104
+        restart: on-failure
+        volumes:
+            - ${DATA_DIR:-/Users/brandonbest/Sites/brandonbest.com}:/var/www/html:rw
+
+# Networks
+networks:
+    default:
+        external:
+            name: nginx-proxy

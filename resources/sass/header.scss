@@ -2,50 +2,57 @@
     text-transform: uppercase;
     padding-top: 0;
     padding-bottom: 0;
-}
 
-.navbar-primary .navbar-brand {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-.navbar-primary .nav-item a {
-    color: #777777;
-}
-
-@media (min-width: 768px) {
-    .navbar-primary.navbar-light .navbar-nav .nav-link {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding: 36px 30px 6px;
-        font-weight: 300;
-        text-transform: none;
-        font-size: 16px;
-        border-bottom: 3px solid #fff !important;
+    .navbar-brand {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
-    .navbar-primary.navbar-light .navbar-nav .nav-link:hover {
-        border-color: #ccc !important;
+
+    .nav-item a {
         color: #777777;
     }
-}
-.navbar-primary.navbar-light .navbar-nav .active > .nav-link {
-    color: $theme-primary;
-    border-color: $theme-primary !important;
+
+    @media (min-width: 768px) {
+        &.navbar-light .navbar-nav .nav-link {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding: 36px 30px 6px;
+            font-weight: 300;
+            text-transform: none;
+            font-size: 16px;
+            border-bottom: 3px solid #fff !important;
+        }
+        &.navbar-light .navbar-nav .nav-link:hover {
+            border-color: #ccc !important;
+            color: #777777;
+        }
+    }
+
+    &.navbar-light .navbar-nav .active > .nav-link {
+        color: $theme-primary;
+        border-color: $theme-primary !important;
+    }
 }
 
 .navbar-secondary {
     background-color: $theme-primary;
     padding-top: 0;
     padding-bottom: 0;
-}
-.navbar-secondary.navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-    font-weight: 300;
-    font-size: 13px;
-    padding: 12px 25px;
-}
-.navbar-secondary.navbar-dark .navbar-nav .nav-item:hover {
-    background-color: rgba(255,255,255, .15);
-}
-.navbar-secondary.navbar-dark .navbar-nav .nav-item.active .nav-link {
-    background-color: rgba(255,255,255, .25);
+
+    &.navbar-dark .navbar-nav {
+        .nav-item {
+            :hover {
+                background-color: rgba(255,255,255, .15);
+            }
+            &.active .nav-link {
+                background-color: rgba(255,255,255, .25);
+            }
+        }
+        .nav-link {
+            color: #fff;
+            font-weight: 300;
+            font-size: 13px;
+            padding: 12px 25px;
+        }
+    }
 }

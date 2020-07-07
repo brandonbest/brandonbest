@@ -1,5 +1,5 @@
 # Use an official PHP runtime as parent
-FROM php:${PHP_VERSION:-7.2}-fpm
+FROM php:${PHP_VERSION:-7.3}-fpm
 
 # add credentials on build
 RUN mkdir -p /root/.ssh
@@ -22,7 +22,7 @@ RUN docker-php-ext-install mbstring pdo_mysql
 # Pull from Git Repo
 RUN cd /var/www/html \
 	&& git init \
-	&& git pull git@github.com:priondevelopment/platform-api.git master
+	&& git pull git@github.com:brandonbest/brandonbest.git master
 
 # Install Composer
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
@@ -31,7 +31,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
     && php -r "unlink('composer-setup.php');" \
     && mv composer.phar /usr/local/bin/composer
 
-# Install Lumen from composer
+# Install Laravel from composer
 RUN cd /var/www/html \
 	&& composer update \
 	&& composer dump-autoload
