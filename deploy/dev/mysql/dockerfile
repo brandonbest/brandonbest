@@ -1,0 +1,5 @@
+# Use an official PHP runtime as parent
+FROM mysql:latest
+
+# add credentials on build
+ADD ./deploy/dev/etc/mysql/bind.cnf /etc/mysql/conf.d/bind.cnf

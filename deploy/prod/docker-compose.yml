@@ -1,0 +1,18 @@
+version: '3'
+services:
+
+    # Bisnow.com Application
+    brandonbest:
+        container_name: brandonbest
+        build:
+            context: ./
+            dockerfile: ./dockerfile
+        environment:
+            API_URL: ${APP_URL:-https://www.brandonbest.com}
+            DB_POST: 3306
+            DB_HOST: localhost
+        restart: on-failure
+        expose:
+            - 80
+        ports:
+            - 80:80

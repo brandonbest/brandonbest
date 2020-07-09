@@ -1,0 +1,43 @@
+version: '3'
+services:
+
+    # BrandonBest.com Application
+    brandonbest:
+        container_name: brandonbest
+        build:
+            context: ../..
+            dockerfile: ./deploy/dev/dockerfile
+        environment:
+            DB_HOST: ${DB_HOST:-mysql}
+            VIRTUAL_HOST: ${VIRTUAL_HOST:-"brandonbest.test"}
+            VIRTUAL_PORT: ${VIRTUAL_PORT:-3104}
+        external_links:
+            - ${REDIS_HOST:-redis}:${REDIS_HOST:-redis}
+            - ${DB_HOST:-mysql}:${DB_HOST:-mysql}
+        ports:
+            - ${VIRTUAL_PORT:-3104}:${VIRTUAL_PORT:-3104}
+        restart: on-failure
+        volumes:
+            - ${DATA_DIR:-/Users/brandonbest/Sites/brandonbest.com}:/app:rw
+
+    # Database
+    mysql:
+        build:
+            context: ../..
+            dockerfile: ./deploy/dev/mysql/dockerfile
+        container_name: 'mysql'
+        expose:
+            - "3306"
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root}
+        restart: on-failure
+        volumes:
+            - ${MYSQL_DATA_DIR:-./data}:/var/lib/mysql:rw
+
+# Networks
+networks:
+    default:
+        external:
+            name: nginx-proxy
