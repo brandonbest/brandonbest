@@ -12,6 +12,9 @@
                             <div class="page_link" v-show="this.subtitle">
                                 <span class="text-white ml-1">{{ subtitle }}</span>
                             </div>
+                            <div class="header_btn" v-show="downloadLink && downloadLinkTitle">
+                                <a v-bind:href="downloadLink" class="btn btn-outline-custom btn-rounded mt-4" target="_blank">{{ this.downloadLinkTitle }}</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -34,6 +37,12 @@
                 type: String
             },
             subtitle: {
+                type: String
+            },
+            downloadLinkTitle: {
+                type: String
+            },
+            downloadLink: {
                 type: String
             }
         },

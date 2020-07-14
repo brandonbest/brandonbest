@@ -1,0 +1,87 @@
+.timeline .circle {
+    padding: 13px 20px;
+    border-radius: 50%;
+    background-color: $theme-primary;
+    color: #fff;
+    max-height: 54px;
+    z-index: 2;
+}
+.timeline h5 {
+    font-size: 20px;
+    padding-bottom: 2px;
+}
+.timeline p {
+    color: #999;
+    font-weight: 100;
+    line-height: 18px;
+}
+
+.timeline .timeline-item div {
+  padding: 0;
+  height: 40px;
+}
+.timeline .timeline-item hr {
+  border-top: 3px solid $theme-primary;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .timeline-item .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+.timeline .timeline-item .corner {
+  border: 3px solid $theme-primary;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .timeline-item .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .timeline-item .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .timeline-item .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .timeline-item .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
+
+.timeline .timeline-end.row .col-2 {
+  align-self: stretch;
+}
+.timeline .timeline-end.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid $theme-primary;
+  z-index: 1;
+}
+.timeline .timeline-end.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.timeline .timeline-end.row .col-2.full.right::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.timeline .timeline-end.row .col-2.full.left::after {
+  height: 100%;
+  left: 50%;
+}
+.timeline .timeline-end.row .col-2.top.left::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+.timeline .timeline-end.row .col-2.top.right::after {
+  height: 50%;
+  left: calc(50% - 3px);
+  top: 0;
+}

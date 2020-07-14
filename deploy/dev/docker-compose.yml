@@ -19,6 +19,7 @@ services:
         restart: on-failure
         volumes:
             - ${DATA_DIR:-/Users/brandonbest/Sites/brandonbest.com}:/app:rw
+        working_dir: /app
 
     # Database
     mysql:

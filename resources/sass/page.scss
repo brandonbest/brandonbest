@@ -43,29 +43,6 @@ button:focus {
     margin: -20px 0 0 -20px;
 }
 
-.spinner {
-    margin: 0 auto;
-    font-size: 10px;
-    position: relative;
-    text-indent: -9999em;
-    border-top: 5px solid rgba(0, 0, 0, 0.2);
-    border-right: 5px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 5px solid rgba(0, 0, 0, 0.2);
-    border-left: 5px solid #000;
-    -webkit-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-animation: load8 1.1s infinite linear;
-    animation: load8 1.1s infinite linear;
-}
-
-.spinner,
-.spinner:after {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-
 @-webkit-keyframes load8 {
     0% {
         -webkit-transform: rotate(0deg);
@@ -116,8 +93,12 @@ button:focus {
     background-color: #fff;
 }
 
+.bg-light {
+    background-color: #fff;
+}
+
 .bg-dark {
-    background-color: #000;
+    background-color: #000 !important;
 }
 
 .bg-custom{
@@ -133,11 +114,15 @@ button:focus {
 }
 
 .header_section {
-    padding: 200px 0px 120px;
-    background-image: url(/images/header_img.jpg);
+    padding: 120px 0px 80px;
+    background-image: url('/images/header_img.jpg');
     background-position: center center;
     background-size: cover;
     position: relative;
+
+    &.pt-5 {
+        padding-top: 200px !important;
+    }
 }
 
 .page_link a {
@@ -168,19 +153,20 @@ button:focus {
     max-width: 570px;
 }
 
-.main-title-border::after,
-.main-title-border::before {
-    display: inline-block;
-    margin-top: -7px;
-    vertical-align: middle;
-    content: "";
-    background-color: #d0d0d0;
-    width: 30px;
-    height: 1px;
-}
+.main-title-border {
+    &::after, &::before {
+        display: inline-block;
+        margin-top: -7px;
+        vertical-align: middle;
+        content: "";
+        background-color: #d0d0d0;
+        width: 30px;
+        height: 1px;
+    }
 
-.main-title-border i {
-    font-size: 20px;
+    i {
+        font-size: 20px;
+    }
 }
 
 .bg-overlay-gredient {
@@ -216,6 +202,10 @@ button:focus {
     bottom: 0;
     width: 100%;
     height: 100%;
+}
+
+.bg-none {
+    background: none !important;
 }
 
 .btn {
@@ -407,7 +397,7 @@ button:focus {
 ============================*/
 
 .home-bg {
-    background-image: url(/images/home-bg.jpg);
+    background-image: url('/images/home-bg.jpg');
     background-position: center center;
     background-size: cover;
     position: relative;
@@ -453,35 +443,33 @@ button:focus {
     color: #fff;
     font-size: 13px;
     z-index: 8;
-}
 
-.scroll_down i {
-    position: relative;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
-    height: 50px;
-    width: 30px;
-    line-height: 60px;
-    border-radius: 30px;
-    border: 2px solid #ffffff;
-    display: inline-block;
-    color: #fff;
-    font-size: 12px;
-}
+    i {
+        position: relative;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+        height: 50px;
+        width: 30px;
+        line-height: 60px;
+        border-radius: 30px;
+        border: 2px solid #ffffff;
+        display: inline-block;
+        color: #fff;
+        font-size: 12px;
 
-.scroll_down i:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    z-index: -1;
-    transition: all .2s;
+        &:after {
+             content: "";
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             border-radius: 50%;
+             z-index: -1;
+             transition: all .2s;
+         }
+    }
 }
-
-/*----DEMO 4/5/6----*/
 
 .creative:after {
     content: "";
@@ -493,23 +481,17 @@ button:focus {
     height: 100px;
     background: transparent;
     background-size: 100% 100%;
-    background-image: url(/images/bottom-color.png);
+    background-image: url('/images/bottom-color.png');
 }
-
-/*----DEMO 7/8/9-----*/
 
 .clip-home{
     clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
 }
 
-/*----DEMO 10/11/12/13----*/
-
 .jarallax{
     background-size: cover;
     background-position: center center;
 }
-
-/*----DEMO 14----*/
 
 .home-bg-slider {
     position: relative;
@@ -537,28 +519,27 @@ button:focus {
 
 .about-detail {
     max-width: 850px;
-}
 
-.about-detail .about-work li {
-    font-size: 18px;
-    font-weight: 600;
-}
+    .about-work li {
+        font-size: 18px;
+        font-weight: 600;
 
-.about-detail .about-work li::after {
-    content: "";
-    height: 3px;
-    width: 3px;
-    border-radius: 50%;
-    background-color: #757575;
-    margin: 0px 12px;
-    position: relative;
-    display: inline-block;
-    top: -3px;
-}
-
-.about-detail .about-work li:last-child:after {
-    content: "";
-    display: none;
+        &::after {
+             content: "";
+             height: 3px;
+             width: 3px;
+             border-radius: 50%;
+             background-color: #757575;
+             margin: 0px 12px;
+             position: relative;
+             display: inline-block;
+             top: -3px;
+         }
+         &:last-child:after {
+              content: "";
+              display: none;
+          }
+    }
 }
 
 .skill-custom .progress {
@@ -571,21 +552,13 @@ button:focus {
     background: #000;
 }
 
-/*==========================
-        6.SERVICES
-============================*/
-
 .lan_box_ser {
     border: 1px dotted #e7e7e7;
-}
 
-.lan_box_ser .ser_icon i {
-    font-size: 42px;
+     .ser_icon i {
+        font-size: 42px;
+    }
 }
-
-/*==========================
-        7.FUNFACTS
-============================*/
 
 .lan_funfact {
     border: 1px dashed #b9b9b9;
@@ -598,14 +571,10 @@ button:focus {
 
 .bg-funfact {
     position: relative;
-    background-image: url(/images/img-1.jpg);
+    background-image: url('/images/img-1.jpg');
     background-size: cover;
     background-position: center center;
 }
-
-/*===========================
-        8.EDUCATION
-=============================*/
 
 .cv_edu_exp {
     padding: 10px 0;
@@ -675,7 +644,7 @@ button:focus {
 
 .bg-cta {
     position: relative;
-    background-image: url(/images/img-2.jpg);
+    background-image: url('/images/img-2.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -874,7 +843,7 @@ button:focus {
 
 .bg-client {
     position: relative;
-    background-image: url(/images/img-3.jpg);
+    background-image: url('/images/img-3.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -911,7 +880,7 @@ button:focus {
 }
 
 /*==========================
-        12.GREATE PEOPLE
+        12.GREAT PEOPLE
 ============================*/
 
 .logo_img img {
@@ -923,7 +892,7 @@ button:focus {
         13.SUBCRIBE SECTION
 ============================*/
 
-.subcribe-newslatter input {
+.subcribe-newsletter input {
     padding: 15px 20px;
     width: 100%;
     font-size: 17px;
@@ -936,7 +905,7 @@ button:focus {
     background-color: #f1f1f1;
 }
 
-.subcribe-newslatter button {
+.subcribe-newsletter button {
     position: absolute;
     top: 4px;
     right: 5px;
@@ -946,7 +915,7 @@ button:focus {
     padding: 9px 30px;
 }
 
-.subcribe-newslatter form {
+.subcribe-newsletter form {
     max-width: 550px;
 }
 
@@ -992,10 +961,10 @@ button:focus {
     box-shadow: none !important;
     height: 44px;
     border-radius: 0px;
-}
 
-.contact_form .form-control:focus {
-    border-color: #000;
+    &:focus {
+         border-color: #000;
+     }
 }
 
 .contact_form textarea.form-control {
@@ -1023,11 +992,11 @@ button:focus {
 #success_msg {
     text-align: center;
     margin-bottom: 20px;
-}
 
-#success_msg h3 {
-    color: #0dba26;
-    font-size: 22px;
+    h3 {
+        color: #0dba26;
+        font-size: 22px;
+    }
 }
 
 /*==========================
@@ -1044,16 +1013,30 @@ button:focus {
     font-size: 18px;
     line-height: 38px;
     text-align: center;
-}
 
-.fot_social .social-icon:hover {
-    border-color: #000;
-    color: #000 !important;
-    transform: rotate(360deg);
+    &:hover {
+         border-color: #000;
+         color: #000 !important;
+         transform: rotate(360deg);
+     }
 }
 
 .copy-rights {
     line-height: 43px;
+}
+
+#footer-top {
+    &.bg-light a {
+        color: #6c757d;
+    }
+}
+#footer-bottom {
+    &.bg-dark a {
+        color: #ddd;
+        font-size: 12px;
+        line-height: 17px;
+        font-weight: 400;
+    }
 }
 
 /*==========================
@@ -1216,61 +1199,20 @@ button:focus {
     padding: 14px 20px;
 }
 
-.comment_blog .comment_read {
-    padding-bottom: 30px;
-    margin-bottom: 50px;
-    border-bottom: 1px solid #e7e7e7;
+.page-error h1 {
+
 }
 
-.comment_blog .comment_read:nth-child(odd) {
-    margin-left: 80px;
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: .3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
 }
 
-.comment_blog .comment_read:last-child {
-    margin-bottom: 0;
-}
-
-.comment_blog .comment_read .comment_img {
-    width: 80px;
-    float: left;
-}
-
-.comment_blog .comment_read .comment_data {
-    margin-left: 100px;
-}
-
-.comment_blog .comment_read .comment_data h6 {
-    font-size: 14px;
-}
-
-.comment_data h6 span {
-    font-size: 12px;
-    margin-top: 8px;
-    color: #777;
-}
-
-.comment_blog .comment_read .comment_data .comment_reply {
-    margin-top: 10px;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.comment_blog .comment_read .comment_data .comment_reply i {
-    padding-right: 2px;
-    font-size: 14px;
-}
-
-.comments-form .comment-form-input .form-control {
-    height: 46px;
-    box-shadow: none !important;
-}
-
-.comments-form .comment-form-input .form-control:focus {
-    border-color: #000;
-}
-
-.comments-form .comment-form-input textarea.form-control {
-    height: auto;
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
 }
 
 /*==========================
@@ -1364,5 +1306,24 @@ button:focus {
     }
     .blog_detail p.blockquote{
         font-size: 14px !important;
+    }
+}
+
+.error-background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    .logo-repeat {
+        background-image: url('/images/brandon-best-icon.png');
+        background-size: 30px 30px;
+        opacity: .2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 }

@@ -18,7 +18,9 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x  | bash - \
     && apt -y install nodejs \
     && npm install \
     && npm install jquery-easing \
-    && npm install magnific-popup
+    && npm install magnific-popup \
+
+RUN npm install @fortawesome/fontawesome-free
 
 # Copy HTML File
 ADD ./deploy/dev/etc/nginx/nginx.conf /etc/nginx/nginx.conf

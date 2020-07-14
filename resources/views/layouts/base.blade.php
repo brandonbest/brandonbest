@@ -19,7 +19,7 @@
 @yield('content')
 @section('js-footer')
     <script src="{{ mix('js/app.js') }}"></script>
-    <script src="{{ mix('js/all.js') }}"></script>
+
 @show
 @yield('tracking')
 </body>

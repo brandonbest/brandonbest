@@ -12,13 +12,13 @@
                                     <h4>Hello &amp; Welcome</h4>
                                     <h1 class="header_title mb-0 mt-3">I Am <span class="title-typed font-weight-bold" data-elements="Brandon Best.,An Engineering Leader.,An Architech."></span></h1>
                                     <ul class="social_home list-unstyled text-center pt-4">
-                                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-github"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-linkedin"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-twitter"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-stack-overflow"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://github.com/brandonbest" target="_blank"><i class="fab fa-github"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/brandondbest/" target="_blank"><i class="fab fa-linkedin-in" target="_blank"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://twitter.com/brandondeanbest" target="_blank"><i class="fab fa-twitter" target="_blank"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://stackoverflow.com/users/944074/dream-ideation" target="_blank"><i class="fab fa-stack-overflow" target="_blank"></i></a></li>
                                     </ul>
                                     <div class="header_btn">
-                                        <a href="#" class="btn btn-outline-custom btn-rounded mt-4">Download Resume</a>
+                                        <a href="/resumes/2020-06/brandon-best-resume.pdf" class="btn btn-outline-custom btn-rounded mt-4" target="_blank">Download Resume</a>
                                     </div>
                                 </div>
                             </div>
@@ -28,7 +28,7 @@
             </div>
             <div class="scroll_down">
                 <a href="#about" class="scroll">
-                    <i class="mbri-arrow-down text-white"></i>
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
                 </a>
             </div>
         </section>
@@ -52,6 +52,11 @@
                     backDelay: 3000
                 });
             });
+
+            $(".scroll_down a").on("click", function (e) {
+                let t = $(this);
+                $("html, body").stop().animate({scrollTop: $(t.attr("href")).offset().top - 0}, 1500, "easeInOutExpo"), e.preventDefault()
+            })
         }
     }
 </script>
