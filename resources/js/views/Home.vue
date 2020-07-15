@@ -8,10 +8,10 @@
                     <div class="col-lg-12">
                         <div class="text-center mx-auto section-main-title">
                             <h2><span class="font-weight-bold">About </span>Me</h2>
-                            <div class="main-title-border">
-                                <i class="fas fa-asterisk"></i>
+                            <div class="main-title-border mt-2 mb-2">
+                                <i class="fas fa-asterisk ml-2 mr-2"></i>
                             </div>
-                            <p class="text-muted mx-auto mt-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            <p class="text-muted mx-auto mt-2">I bring big ideas to life. By hiring teams and archicteching microservices, I construct scalable procedures and infrastructure.</p>
                         </div>
                     </div>
                 </div>
@@ -21,13 +21,13 @@
                             <img src="/images/brandon-best-signature.png" alt="Brandon Best Signature" class="signature img-fluid mx-auto d-block">
                         </div>
                         <div class="text-center about-detail mx-auto mt-5">
-                            <h3 class="mb-3">Hello! <span class="font-weight-bold text-custom">I'M Brandon Best.</span></h3>
+                            <h3 class="mb-3">Hello! <span class="font-weight-bold text-custom">I'm Brandon Best.</span></h3>
                             <ul class="mb-0 list-inline text-center about-work">
                                 <li class="list-inline-item mr-0 text-muted">Engineering Leader</li>
                                 <li class="list-inline-item mr-0 text-muted">Architect</li>
                                 <li class="list-inline-item mr-0 text-muted">Developer</li>
                             </ul>
-                            <p class="text-muted mt-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                            <p class="text-muted mt-3">I thrive on constructing order out of instability and chaos. Using modern software and coding practices, I push teams to tackle persistent issues with scalable technology and alerts.</p>
                         </div>
                     </div>
                 </div>
@@ -35,50 +35,44 @@
                     <div class="col-lg-6">
                         <div class="progress-bars skill-custom">
                             <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Development</div>
-                                <div class="text-muted float-right">80%</div>
+                                <div class="text-dark font-weight-bold float-left">Identifying Core Issues</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">WordPress</div>
-                                <div class="text-muted float-right">59%</div>
+                                <div class="text-dark font-weight-bold float-left">Documentation</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 59%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Photoshop</div>
-                                <div class="text-muted float-right">88%</div>
+                                <div class="text-dark font-weight-bold float-left">Hiring</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="progress-bars skill-custom">
                             <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Html</div>
-                                <div class="text-muted float-right">96%</div>
+                                <div class="text-dark font-weight-bold float-left">Building Roadmaps</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 86%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Css</div>
-                                <div class="text-muted float-right">70%</div>
+                                <div class="text-dark font-weight-bold float-left">Maintaining Loyalty</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Asp.net</div>
-                                <div class="text-muted float-right">58%</div>
+                                <div class="text-dark font-weight-bold float-left">Architecture</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width:58%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" style="width:100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -92,8 +86,8 @@
                     <div class="col-lg-12">
                         <div class="text-center mx-auto section-main-title">
                             <h2>Our <span class="font-weight-bold">Services</span></h2>
-                            <div class="main-title-border">
-                                <i class="mdi mdi-asterisk"></i>
+                            <div class="main-title-border mt-2 mb-2">
+                                <i class="fas fa-asterisk ml-2 mr-2"></i>
                             </div>
                             <p class="text-muted mx-auto mt-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                         </div>
@@ -106,7 +100,7 @@
                                 <i class="mbri-database"></i>
                             </div>
                             <div class="service-content mt-4">
-                                <h5 class="font-weight-bold">Graphic Design</h5>
+                                <h5 class="font-weight-bold">Infrastructure Architechure</h5>
                                 <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
                             </div>
                         </div>
@@ -117,7 +111,7 @@
                                 <i class="mbri-website-theme"></i>
                             </div>
                             <div class="service-content mt-4">
-                                <h5 class="font-weight-bold">Unlimited Color</h5>
+                                <h5 class="font-weight-bold">Ticket Tracking</h5>
                                 <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
                             </div>
                         </div>
@@ -128,7 +122,7 @@
                                 <i class="mbri-growing-chart"></i>
                             </div>
                             <div class="service-content mt-4">
-                                <h5 class="font-weight-bold">Media Marketing</h5>
+                                <h5 class="font-weight-bold">Automated Testing</h5>
                                 <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
                             </div>
                         </div>
@@ -141,7 +135,7 @@
                                 <i class="mbri-wifi"></i>
                             </div>
                             <div class="service-content mt-4">
-                                <h5 class="font-weight-bold">Unlimited Wifi</h5>
+                                <h5 class="font-weight-bold">Road Mapping</h5>
                                 <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
                             </div>
                         </div>
@@ -152,7 +146,7 @@
                                 <i class="mbri-responsive"></i>
                             </div>
                             <div class="service-content mt-4">
-                                <h5 class="font-weight-bold">Responsive Design</h5>
+                                <h5 class="font-weight-bold">Code Delivery</h5>
                                 <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
                             </div>
                         </div>
@@ -163,7 +157,7 @@
                                 <i class="mbri-edit"></i>
                             </div>
                             <div class="service-content mt-4">
-                                <h5 class="font-weight-bold">Easy to customize</h5>
+                                <h5 class="font-weight-bold">Hiring</h5>
                                 <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
                             </div>
                         </div>

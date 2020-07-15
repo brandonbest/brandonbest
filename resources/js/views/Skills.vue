@@ -1,8 +1,92 @@
 <template>
     <div>
-        <page-title title="Skills" subtitle="What skills does Brandon have?"></page-title>
+        <PageTitle title="Skills" subtitle="What skills does Brandon have?"></PageTitle>
         <section class="section" id="skills">
             <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-12">
+                        <div class="text-center mx-auto section-main-title">
+                            <h2 class="mb-3"><span
+                                    class="font-weight-bold">Leadership </span></h2>
+                            <div class="main-title-border"><i class="fas fa-users mr-2 ml-2"></i></div>
+                            <p class="text-muted mx-auto mt-3">Maintaining Direction and Hiring</p></div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-6">
+                        <div class="progress-bars skill-custom">
+                            <h6>Roadmaps</h6>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="progress-bars skill-custom">
+                            <h6>Documentation Standards</h6>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="progress-bars skill-custom">
+                            <h6>Testing</h6>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="progress-bars skill-custom">
+                            <h6>Project Management</h6>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="progress-bars skill-custom">
+                            <h6>Team Loyalty</h6>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="progress-bars skill-custom">
+                            <h6>Agile</h6>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="progress-bars skill-custom">
+                            <h6>Sprint Planning</h6>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="progress-bars skill-custom">
+                            <h6>Communication</h6>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row justify-content-center mb-5">
                     <div class="col-lg-12">
                         <div class="text-center mx-auto section-main-title">
