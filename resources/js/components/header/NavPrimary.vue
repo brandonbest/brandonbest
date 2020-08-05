@@ -3,17 +3,17 @@
         <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
             <div class="container">
                 <router-link class="navbar-brand logo" :to="{ name: 'Home' }">
-                    <img src="images/brandon-b.png" alt="Brandon Best" class="img-fluid logo-light">
-                    <img src="images/brandon-b-black.png" alt="Brandon Best" class="img-fluid logo-dark">
+                    <img src="/images/brandon-b.png" alt="Brandon Best" class="img-fluid logo-light">
+                    <img src="/images/brandon-b-black.png" alt="Brandon Best" class="img-fluid logo-dark">
                 </router-link>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="mdi mdi-menu"></i>
+                    <i class="fas fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-collapse collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item" v-bind:class="{ 'active': currentRouteName === 'Experience' }">
-                            <router-link class="nav-link" :to="{ name: 'Experience' }">Accomplishments</router-link>
+                        <li class="nav-item" v-bind:class="{ 'active': currentRouteName !== null && currentRouteName.includes('accomplishments') }">
+                            <router-link class="nav-link" :to="{ name: 'accomplishments.overview' }">Accomplishments</router-link>
                         </li>
                         <li class="nav-item" v-bind:class="{ 'active': currentRouteName === 'Skills' }">
                             <router-link class="nav-link" :to="{ name: 'Skills' }">Skills</router-link>

@@ -1,6 +1,8 @@
 <template>
     <div>
-        <page-title title="Experience" subtitle="What has Brandon done?"></page-title>
+        <page-title title="Accomplishments" subtitle="What has Brandon done?"></page-title>
+
+        <Accomplishments></Accomplishments>
 
         <section id="companies" class="section bg-light">
             <div class="container">
@@ -16,9 +18,7 @@
                     <div class="col-lg-3">
                         <div class="lan_box_ser text-center rounded p-4 mt-3">
                             <div class="ser_icon">
-                                <router-link :to="{ name: 'experience.bisnow' }">
-                                    <img src="/images/companies/bisnow.jpg" alt="Bisnow" />
-                                </router-link>
+                                <img src="/images/companies/bisnow.jpg" alt="Bisnow" />
                             </div>
                             <div class="service-content mt-1">
                                 <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is
@@ -31,9 +31,7 @@
                     <div class="col-lg-3">
                         <div class="lan_box_ser text-center rounded p-4 mt-3">
                             <div class="ser_icon">
-                                <router-link :to="{ name: 'experience.dream-ideation' }">
-                                    <img src="/images/companies/dream-ideation.jpg" alt="Dream Ideation" />
-                                </router-link>
+                                <img src="/images/companies/dream-ideation.jpg" alt="Dream Ideation" />
                             </div>
                             <div class="service-content mt-1">
                                 <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is
@@ -47,9 +45,7 @@
                     <div class="col-lg-3">
                         <div class="lan_box_ser text-center rounded p-4 mt-3">
                             <div class="ser_icon">
-                                <router-link :to="{ name: 'experience.rich-hessler-solar' }">
-                                    <img src="/images/companies/rich-hessler.jpg" alt="Rich Hessler" />
-                                </router-link>
+                                <img src="/images/companies/rich-hessler.jpg" alt="Rich Hessler" />
                             </div>
                             <div class="service-content mt-1">
                                 <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is
@@ -62,9 +58,7 @@
                     <div class="col-lg-3">
                         <div class="lan_box_ser text-center rounded p-4 mt-3">
                             <div class="ser_icon">
-                                <router-link :to="{ name: 'experience.mesa-public-schools' }">
-                                    <img src="/images/companies/mesa-public-schools.jpg" alt="Mesa Public Schools" />
-                                </router-link>
+                                <img src="/images/companies/mesa-public-schools.jpg" alt="Mesa Public Schools" />
                             </div>
                             <div class="service-content mt-1">
                                 <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is
@@ -90,12 +84,13 @@
 </style>
 
 <script>
-    import PageTitle from "../components/header/PageTitle";
-    import FooterTop from "../components/footer/FooterTop";
-    import FooterBottom from "../components/footer/FooterBottom";
+    import PageTitle from "../../components/header/PageTitle";
+    import FooterTop from "../../components/footer/FooterTop";
+    import FooterBottom from "../../components/footer/FooterBottom";
+    import Accomplishments from "./Accomplishments";
     export default {
-        name: 'experience',
-        components: {FooterBottom, FooterTop, PageTitle},
+        name: 'accomplishments.overview',
+        components: {Accomplishments, FooterBottom, FooterTop, PageTitle},
         computed: {
             currentRouteName() {
                 return this.$route.name;

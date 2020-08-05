@@ -15,6 +15,9 @@
                             <div class="header_btn" v-show="downloadLink && downloadLinkTitle">
                                 <a v-bind:href="downloadLink" class="btn btn-outline-custom btn-rounded mt-4" target="_blank">{{ this.downloadLinkTitle }}</a>
                             </div>
+                            <div class="header_btn" v-show="link && linkTitle">
+                                <a v-bind:href="link" class="btn btn-outline-custom btn-rounded mt-4">{{ this.linkTitle }}</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -43,6 +46,12 @@
                 type: String
             },
             downloadLink: {
+                type: String
+            },
+            linkTitle: {
+                type: String
+            },
+            link: {
                 type: String
             }
         },

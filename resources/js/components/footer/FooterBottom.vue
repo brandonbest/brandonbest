@@ -7,17 +7,20 @@
                         <ul class="nav">
                             <li class="nav-item">
                                 <router-link class="navbar-brand logo" :to="{ name: 'Home' }">
-                                    <img src="images/brandon-b.png" alt="Brandon Best" class="img-fluid logo-light">
+                                    <img src="/images/brandon-b.png" alt="Brandon Best" class="img-fluid logo-light">
                                 </router-link>
                             </li>
                             <li class="nav-item">
-                                <router-link class="nav-link" :to="{ name: 'SiteMap' }">Site Map</router-link>
+                                <router-link class="nav-link" :to="{ name: 'sitemap' }">Site Map</router-link>
                             </li>
                             <li class="nav-item">
-                                <router-link class="nav-link" :to="{ name: 'Privacy' }">Privacy</router-link>
+                                <router-link class="nav-link" :to="{ name: 'legal' }">Legal</router-link>
                             </li>
                             <li class="nav-item">
-                                <router-link class="nav-link" :to="{ name: 'TermsOfUse' }">Terms of Use</router-link>
+                                <router-link class="nav-link" :to="{ name: 'legal.privacy' }">Privacy</router-link>
+                            </li>
+                            <li class="nav-item">
+                                <router-link class="nav-link" :to="{ name: 'legal.terms' }">Terms of Use</router-link>
                             </li>
                         </ul>
                     </div>

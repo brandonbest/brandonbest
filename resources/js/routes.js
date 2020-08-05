@@ -6,9 +6,54 @@ const routes = [
     },
     {
         path: '/about',
-        name: 'About',
-        meta: { title: 'About Brandon' },
-        component: () => import("./views/About"),
+        component: () => import("./views/EmptyRouterView"),
+        children: [
+            {
+                path: '',
+                name: 'About',
+                meta: { title: 'About Brandon' },
+                component: () => import("./views/About"),
+            },
+            {
+                path: 'backyard',
+                name: 'about.backyard',
+                component: () => import("./views/about/Backyard"),
+            },
+            {
+                path: 'hiking',
+                name: 'about.hiking',
+                component: () => import("./views/about/Hiking"),
+            },
+            {
+                path: 'wood-working',
+                name: 'about.wood-working',
+                component: () => import("./views/about/WoodWorking"),
+            },
+        ]
+    },
+    {
+        path: '/accomplishments',
+        component: () => import("./views/EmptyRouterView"),
+        children: [
+            {
+                path: '',
+                name: 'accomplishments.overview',
+                meta: { title: 'Brandon\'s Accomplishments' },
+                component: () => import("./views/accomplishments/Overview"),
+            },
+            {
+                path: 'built-team',
+                name: 'accomplishments.built-team',
+                meta: { title: 'Built Engineering Team' },
+                component: () => import("./views/accomplishments/BuiltTeam"),
+            },
+            {
+                path: 'built-team',
+                name: 'accomplishments.mentor',
+                meta: { title: 'Mentoring Engineers' },
+                component: () => import("./views/accomplishments/Mentor"),
+            }
+        ]
     },
     {
         path: '/blog',
@@ -24,15 +69,75 @@ const routes = [
     },
     {
         path: '/experience',
-        name: 'Experience',
-        meta: { title: 'Brandon\'s Experience' },
-        component: () => import("./views/Experience"),
+        component: () => import("./views/EmptyRouterView"),
+        children: [
+            {
+                path: '',
+                name: 'experience',
+                meta: { title: 'Brandon\'s Experience' },
+                component: () => import("./views/Experience"),
+            },
+            {
+                path: 'bisnow',
+                name: 'experience.bisnow',
+                meta: { title: 'Bisnow' },
+                component: () => import("./views/companies/Bisnow"),
+            },
+            {
+                path: 'dream-ideation',
+                name: 'experience.dream-ideation',
+                meta: { title: 'Dream Ideation' },
+                component: () => import("./views/companies/DreamIdeation"),
+            },
+            {
+                path: 'mesa-public-schools',
+                name: 'experience.mesa-public-schools',
+                meta: { title: 'Mesa Public Schools' },
+                component: () => import("./views/companies/MesaPublicSchools"),
+            },
+            {
+                path: 'rich-hessler-solar',
+                name: 'experience.rich-hessler-solar',
+                meta: { title: 'Bisnow' },
+                component: () => import("./views/companies/RichHessler"),
+            },
+        ]
     },
     {
-        path: '/privacy',
-        name: 'Privacy Policy',
-        meta: { title: 'Privacy Policy'},
-        component: () => import("./views/Privacy"),
+        path: '/legal',
+        component: () => import("./views/EmptyRouterView"),
+        children: [
+            {
+                path: '',
+                name: 'legal',
+                meta: { title: 'Legal' },
+                component: () => import("./views/legal/Legal"),
+            },
+            {
+                path: 'data',
+                name: 'legal.data',
+                meta: { title: 'Brandon Best Data Request'},
+                component: () => import("./views/legal/data"),
+            },
+            {
+                path: 'privacy',
+                name: 'legal.privacy',
+                meta: { title: 'Brandon Best Privacy Policy'},
+                component: () => import("./views/legal/Privacy"),
+            },
+            {
+                path: 'terms-of-use',
+                name: 'legal.terms',
+                meta: { title: 'Brandon Best Terms' },
+                component: () => import("./views/legal/TermsOfUse"),
+            },
+        ]
+    },
+    {
+        path: '/legal/cookies',
+        name: 'legal.cookies',
+        meta: { title: 'Brandon Best Cookie Policy'},
+        component: () => import("./views/legal/Cookie"),
     },
     {
         path: '/portfolio',
@@ -48,7 +153,7 @@ const routes = [
     },
     {
         path: '/site-map',
-        name: 'Site Map',
+        name: 'sitemap',
         meta: { title: 'Brandon Best Site Map' },
         component: () => import("./views/SiteMap"),
     },
@@ -57,12 +162,6 @@ const routes = [
         name: 'Skills',
         meta: { title: 'Brandon\'s Skills' },
         component: () => import("./views/Skills"),
-    },
-    {
-        path: '/terms-of-user',
-        name: 'Terms of User',
-        meta: { title: 'Brandon Best Terms' },
-        component: () => import("./views/TermsOfUse"),
     },
     {
         path: '*',

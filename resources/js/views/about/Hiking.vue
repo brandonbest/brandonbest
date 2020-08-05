@@ -1,6 +1,6 @@
 <template>
     <div>
-        <PageTitle title="About Brandon" subtitle="Who is Brandon?"></PageTitle>
+        <page-title title="Hiking" subtitle="I love to hike"></page-title>
         <section class="section">
             <div class="container">
                 <div class="row">
@@ -105,24 +105,13 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <div class="text-center mx-auto section-main-title">
-                            <h2><span class="font-weight-bold">Hobbies</span></h2>
+                            <h2>Other <span class="font-weight-bold">Hobbies</span></h2>
                             <div class="main-title-border mt-2 mb-2"><i class="fas fa-tractor ml-2 mr-2"></i></div>
                         </div>
                     </div>
                 </div>
                 <div class="row mt-4 pt-4">
-                    <div class="col-lg-4">
-                        <div class="lan_box_ser text-center rounded p-4 mt-3">
-                            <div class="ser_icon"><i class="fas fa-hiking"></i></div>
-                            <div class="service-content mt-4">
-                                <h5 class="font-weight-bold">Hiking</h5>
-                                <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is
-                                    reproduced below for those interested.</p>
-                                <router-link class="btn btn-xs btn-outline-black btn-rounded mt-4" :to="{ name: 'about.hiking' }">Learn More</router-link>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-6">
                         <div class="lan_box_ser text-center rounded p-4 mt-3">
                             <div class="ser_icon"><i class="fas fa-tree"></i></div>
                             <div class="service-content mt-4"><h5 class="font-weight-bold">Landscaping</h5>
@@ -130,7 +119,7 @@
                                     reproduced below for those interested.</p></div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-6">
                         <div class="lan_box_ser text-center rounded p-4 mt-3">
                             <div class="ser_icon"><i class="fas fa-pencil-ruler"></i></div>
                             <div class="service-content mt-4"><h5 class="font-weight-bold">Wood Work</h5>
@@ -147,12 +136,12 @@
 </template>
 
 <script>
-    import PageTitle from "../components/header/PageTitle";
-    import FooterTop from "../components/footer/FooterTop";
-    import FooterBottom from "../components/footer/FooterBottom";
+    import PageTitle from "../../components/header/PageTitle";
+    import FooterTop from "../../components/footer/FooterTop";
+    import FooterBottom from "../../components/footer/FooterBottom";
 
     export default {
-        name: 'About',
+        name: 'about.hiking',
         components: {FooterBottom, FooterTop, PageTitle},
         computed: {
             currentRouteName() {

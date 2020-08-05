@@ -450,7 +450,7 @@
                             <h2 class="mb-3"><span
                                     class="font-weight-bold">Other</span> Skills</h2>
                             <div class="main-title-border"><i class="fas fa-tractor ml-2 mr-2"></i></div>
-                            <p class="text-muted mx-auto mt-3">My non-work skills</p></div>
+                            <p class="text-muted mx-auto mt-3">How I spend my free time.</p></div>
                     </div>
                 </div>
                 <div class="row mb-5">
@@ -462,7 +462,7 @@
                                      aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <ul class="list-group list-group-flush mt-2 mb-4">
-                                <li class="list-group-item p-1 pl-3">Landscape Architecture</li>
+                                <li class="list-group-item p-1 pl-3">Landscape Design</li>
                                 <li class="list-group-item p-1 pl-3">Electical</li>
                                 <li class="list-group-item p-1 pl-3">Gas</li>
                                 <li class="list-group-item p-1 pl-3">Turf Installation and Maintenance</li>
@@ -492,16 +492,18 @@
             </div>
         </section>
         <FooterTop></FooterTop>
+        <FooterBottom></FooterBottom>
     </div>
 </template>
 
 <script>
     import PageTitle from "../components/header/PageTitle";
     import FooterTop from "../components/footer/FooterTop";
+    import FooterBottom from "../components/footer/FooterBottom";
 
     export default {
         name: 'skills',
-        components: {FooterTop, PageTitle},
+        components: {FooterBottom, FooterTop, PageTitle},
         computed: {
             currentRouteName() {
                 return this.$route.name;

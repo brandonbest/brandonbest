@@ -1,7 +1,7 @@
 <template>
     <div>
         <NavPrimary></NavPrimary>
-        <transition name="fade" mode="out-in">
+        <transition name="fade" mode="out-in" appear>
             <router-view class="bg-light"></router-view>
         </transition>
         <a href="#" class="back_top" style="display: inline;"> <i class="fas fa-chevron-up"></i> </a>

@@ -10,4 +10,12 @@ const router = new VueRouter({
     routes: Routes,
 });
 
+router.beforeEach(function (to, from, next) {
+    $(".sticky").removeClass("stickyadd");
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 225);
+    next();
+});
+
 export default router;

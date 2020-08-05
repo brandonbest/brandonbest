@@ -18988,7 +18988,7 @@ button:focus {
 }
 
 .bg-light {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 .bg-dark {
@@ -19178,6 +19178,11 @@ button:focus {
   background-color: #fff;
   border-color: #000;
   color: #000;
+}
+
+.btn-xs {
+  padding: 8px 20px;
+  font-size: 13px;
 }
 
 /*==========================
@@ -20075,6 +20080,21 @@ button:focus {
 .fade-enter,
 .fade-leave-active {
   opacity: 0;
+}
+
+.section-legal {
+  font-size: 16px;
+  line-height: 20px;
+}
+.section-legal ul, .section-legal ol {
+  margin-left: 20px;
+}
+.section-legal ul li, .section-legal ol li {
+  padding-left: 3px;
+  margin-bottom: 2px;
+}
+.section-legal p {
+  margin-bottom: 16px;
 }
 
 /*==========================

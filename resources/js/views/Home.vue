@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-light">
         <title-fancy></title-fancy>
 
         <section class="section" id="about">
@@ -11,7 +11,7 @@
                             <div class="main-title-border mt-2 mb-2">
                                 <i class="fas fa-asterisk ml-2 mr-2"></i>
                             </div>
-                            <p class="text-muted mx-auto mt-2">I bring big ideas to life. By hiring teams and archicteching microservices, I construct scalable procedures and infrastructure.</p>
+                            <p class="text-muted mx-auto mt-2">Architecting internet businesses using scalable technology.</p>
                         </div>
                     </div>
                 </div>
@@ -27,33 +27,11 @@
                                 <li class="list-inline-item mr-0 text-muted">Architect</li>
                                 <li class="list-inline-item mr-0 text-muted">Developer</li>
                             </ul>
-                            <p class="text-muted mt-3">I thrive on constructing order out of instability and chaos. Using modern software and coding practices, I push teams to tackle persistent issues with scalable technology and alerts.</p>
+                            <p class="text-muted mt-3">I construct technological frameworks to build web based businesses including: server infrastructure, security, code organization, continuous deployment and team workflow. I hire engineering teams to bring these frameworks to life.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row mt-5">
-                    <div class="col-lg-6">
-                        <div class="progress-bars skill-custom">
-                            <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Identifying Core Issues</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Documentation</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Hiring</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-6">
                         <div class="progress-bars skill-custom">
                             <div class="clearfix">
@@ -63,16 +41,38 @@
                                 <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Maintaining Loyalty</div>
+                                <div class="text-dark font-weight-bold float-left">Hiring</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width:100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-dark font-weight-bold float-left">Optimizing Productivity</div>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="progress-bars skill-custom">
                             <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Architecture</div>
+                                <div class="text-dark font-weight-bold float-left">Microservice Architecture</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width:100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-dark font-weight-bold float-left">Continuous Deployment</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-dark font-weight-bold float-left">AWS / Docker</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -85,11 +85,11 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <div class="text-center mx-auto section-main-title">
-                            <h2>Our <span class="font-weight-bold">Services</span></h2>
+                            <h2>Brandon's <span class="font-weight-bold">Services</span></h2>
                             <div class="main-title-border mt-2 mb-2">
-                                <i class="fas fa-asterisk ml-2 mr-2"></i>
+                                <i class="fas fa-cogs ml-2 mr-2"></i>
                             </div>
-                            <p class="text-muted mx-auto mt-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            <p class="text-muted mx-auto mt-2">I thrive on bringing internet dreams to life.</p>
                         </div>
                     </div>
                 </div>
@@ -97,33 +97,33 @@
                     <div class="col-lg-4">
                         <div class="lan_box_ser text-center rounded p-4 mt-3">
                             <div class="ser_icon">
-                                <i class="mbri-database"></i>
+                                <i class="fas fa-server"></i>
                             </div>
                             <div class="service-content mt-4">
                                 <h5 class="font-weight-bold">Infrastructure Architechure</h5>
-                                <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
+                                <p class="mt-3 text-muted mb-0">Selecting the best technologies for your dream and organizing the technology to automatically scale as your dream grows.</p>
+                            </div>
+                        </div>
+                    </div><div class="col-lg-4">
+                        <div class="lan_box_ser text-center rounded p-4 mt-3">
+                            <div class="ser_icon">
+                                <i class="fas fa-road"></i>
+                            </div>
+                            <div class="service-content mt-4">
+                                <h5 class="font-weight-bold">Road Mapping</h5>
+                                <p class="mt-3 text-muted mb-0">Documenting priorities to answering questions like: How long will this take? What will it cost?</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4">
                         <div class="lan_box_ser text-center rounded p-4 mt-3">
                             <div class="ser_icon">
-                                <i class="mbri-website-theme"></i>
+                                <i class="fas fa-ticket-alt"></i>
                             </div>
                             <div class="service-content mt-4">
                                 <h5 class="font-weight-bold">Ticket Tracking</h5>
-                                <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="lan_box_ser text-center rounded p-4 mt-3">
-                            <div class="ser_icon">
-                                <i class="mbri-growing-chart"></i>
-                            </div>
-                            <div class="service-content mt-4">
-                                <h5 class="font-weight-bold">Automated Testing</h5>
-                                <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
+                                <p class="mt-3 text-muted mb-0">Breaking down the roadmap into tasks for engineers. Implement a system to collect features and bugs.</p>
                             </div>
                         </div>
                     </div>
@@ -132,18 +132,19 @@
                     <div class="col-lg-4">
                         <div class="lan_box_ser text-center rounded p-4 mt-3">
                             <div class="ser_icon">
-                                <i class="mbri-wifi"></i>
+                                <i class="fas fa-vials"></i>
                             </div>
                             <div class="service-content mt-4">
-                                <h5 class="font-weight-bold">Road Mapping</h5>
-                                <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
+                                <h5 class="font-weight-bold">Automated Testing</h5>
+                                <p class="mt-3 text-muted mb-0">Setting up the groundwork for running automated testing including local unit tests, Github actions and QA services.</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4">
                         <div class="lan_box_ser text-center rounded p-4 mt-3">
                             <div class="ser_icon">
-                                <i class="mbri-responsive"></i>
+                                <i class="fas fa-truck-loading"></i>
                             </div>
                             <div class="service-content mt-4">
                                 <h5 class="font-weight-bold">Code Delivery</h5>
@@ -154,7 +155,7 @@
                     <div class="col-lg-4">
                         <div class="lan_box_ser text-center rounded p-4 mt-3">
                             <div class="ser_icon">
-                                <i class="mbri-edit"></i>
+                                <i class="fas fa-users"></i>
                             </div>
                             <div class="service-content mt-4">
                                 <h5 class="font-weight-bold">Hiring</h5>
@@ -172,9 +173,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-center text-white">
-                            <h1>I Am Available For Freelancer.</h1>
+                            <h1>I Am Available To Help.</h1>
                             <div class="mt-4">
-                                <a href="#" class="btn btn-outline-custom">Hire Me!</a>
+                                <a href="#" class="btn btn-outline-custom">Schedule Meeting</a>
                             </div>
                         </div>
                     </div>
