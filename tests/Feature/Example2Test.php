@@ -5,7 +5,7 @@ namespace Tests\Feature;
 use Tests\TestCase;
 use Tests\Traits\RefreshDatabase;
 
-class ExampleTest2 extends TestCase
+class Example2Test extends TestCase
 {
     use RefreshDatabase;
 
