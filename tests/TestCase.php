@@ -4,11 +4,9 @@ namespace Tests;
 
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 
-use Tests\Traits\RefreshDatabase;
-
 abstract class TestCase extends BaseTestCase
 {
-    use CreatesApplication, RefreshDatabase;
+    use CreatesApplication;
 
     /**
      * Boot the testing helper traits.
