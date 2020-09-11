@@ -42,16 +42,10 @@ const routes = [
                 component: () => import("./views/accomplishments/Overview"),
             },
             {
-                path: 'built-team',
-                name: 'accomplishments.built-team',
-                meta: { title: 'Built Engineering Team' },
-                component: () => import("./views/accomplishments/BuiltTeam"),
-            },
-            {
-                path: 'built-team',
-                name: 'accomplishments.mentor',
-                meta: { title: 'Mentoring Engineers' },
-                component: () => import("./views/accomplishments/Mentor"),
+                path: ':slug',
+                name: 'accomplishments.accomplishment',
+                meta: { title: 'Brandon\'s Accomplishment' },
+                component: () => import("./views/accomplishments/Accomplishment"),
             }
         ]
     },

@@ -13,11 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('healthcheck', function () {
-    return view('healthcheck');
-});
-
-
-Route::get('/{any}', function () {
-    return view('vue');
-})->where('any', '.*');
+Route::view('healthcheck', 'healthcheck');
+Route::view('/{any}', 'vue')->where('any', '.*');

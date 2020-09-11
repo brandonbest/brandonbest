@@ -5,6 +5,10 @@
     @include('components.loader-css')
 @endsection
 
+@section('preload')
+    @include('components.preload')
+@endsection
+
 @section('content')
     @section('body')
         <div id="app-loader">

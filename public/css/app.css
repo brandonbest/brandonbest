@@ -6358,7 +6358,7 @@ readers do not read off random characters that represent icons */
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Nunito", sans-serif;
+  --font-family-sans-serif: "Nunito", Helvetica, sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -6381,7 +6381,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", Helvetica, sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
@@ -11902,7 +11902,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -12004,7 +12004,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -18892,7 +18892,7 @@ h3 {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", Helvetica, sans-serif;
   overflow-x: hidden;
 }
 
@@ -18902,7 +18902,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
 }
 h1 .font-weight-bold,
 h2 .font-weight-bold,

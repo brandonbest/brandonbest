@@ -14,6 +14,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
+
+Route::prefix('accomplishments')->group(function() {
+    Route::get('/', 'AccomplishmentsController@all');
+    Route::get('{accomplishment}', 'AccomplishmentsController@single');
 });
+
+Route::prefix('companies')->group(function() {
+    Route::get('/', 'CompaniesController@all');
+    Route::get('{company}', 'CompaniesController@single');
+    Route::get('{company}/projects', 'CompaniesController@projects');
+    Route::get('{company}/projects/{project}', 'CompaniesController@project');
+});
+
+Route::prefix('projects')->group(function() {
+    Route::get('/', 'ProjectsController@all');
+    Route::get('{project}', 'ProjectsController@single');
+});
+
+Route::get('skills', 'SkillsController@all');
+Route::get('skills/categories', 'SkillsController@categories');
+
+Route::get('/', 'ApiController@api');
+Route::get('{any}', 'ErrorController@error404');

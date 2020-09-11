@@ -2,8 +2,8 @@
 
 namespace Tests\Feature;
 
+use BrandonBest\UnittestSqlite\Traits\RefreshDatabase;
 use Tests\TestCase;
-use Tests\Traits\RefreshDatabase;
 
 class ExampleTest extends TestCase
 {

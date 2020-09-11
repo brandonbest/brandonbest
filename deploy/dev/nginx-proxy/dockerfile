@@ -1,0 +1,6 @@
+FROM jwilder/nginx-proxy:alpine
+
+ADD ./deploy/dev/nginx-proxy/etc/nginx/increase_bodysize.conf /etc/nginx/conf.d/increase_bodysize.conf
+
+COPY ./deploy/dev/nginx-proxy/etc/nginx/certs/brandonbest.test.crt /etc/nginx/certs/brandonbest.test.crt
+COPY ./deploy/dev/nginx-proxy/etc/nginx/certs/brandonbest.test.key /etc/nginx/certs/brandonbest.test.key

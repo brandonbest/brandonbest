@@ -7,10 +7,10 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-white text-center">
-                            <h2 class="font-weight-bold">{{ title }}</h2>
+                            <h2 class="font-weight-bold" v-html="this.title"></h2>
                             <div class="home_divider mt-3 mb-3 mx-auto"></div>
                             <div class="page_link" v-show="this.subtitle">
-                                <span class="text-white ml-1">{{ subtitle }}</span>
+                                <span class="text-white ml-1" v-html="this.subtitle"></span>
                             </div>
                             <div class="header_btn" v-show="downloadLink && downloadLinkTitle">
                                 <a v-bind:href="downloadLink" class="btn btn-outline-custom btn-rounded mt-4" target="_blank">{{ this.downloadLinkTitle }}</a>

@@ -38,8 +38,8 @@ services:
     # Cache/Queues
     redis:
         build:
-            context: ./
-            dockerfile: app.dockerfile
+            context: ../..
+            dockerfile: ./deploy/dev/redis/dockerfile
         container_name: 'redis'
         expose:
             - ${REDIS_PORT:-6379}
@@ -48,6 +48,22 @@ services:
         restart: on-failure
         volumes:
             - ${REDIS_DATA_DIR:-./data}:/var/lib/redis
+
+    # Local Proxy Service
+    nginx-proxy:
+        image: jwilder/nginx-proxy:alpine
+        container_name: nginx-proxy
+        build:
+            context: ../..
+            dockerfile: ./deploy/dev/nginx-proxy/dockerfile
+        environment:
+            HTTPS_METHOD: "noredirect"
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - /var/run/docker.sock:/tmp/docker.sock:ro
+        restart: unless-stopped
 
 # Networks
 networks:

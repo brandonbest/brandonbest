@@ -8,6 +8,8 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
     @show
     <title>@yield('title', 'Brandon Best')</title>
+    @yield('preload')
+
     @section('css')
         <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css">
     @show

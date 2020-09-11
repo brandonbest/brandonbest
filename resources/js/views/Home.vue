@@ -1,6 +1,6 @@
 <template>
     <div class="bg-light">
-        <title-fancy></title-fancy>
+        <TitleFancy></TitleFancy>
 
         <section class="section" id="about">
             <div class="container">

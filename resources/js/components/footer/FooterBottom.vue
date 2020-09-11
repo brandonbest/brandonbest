@@ -31,7 +31,7 @@
 </template>
 
 <style lang="scss">
-    #footer-bottom {
+    section#footer-bottom {
         img {
             max-height: 20px;
         }

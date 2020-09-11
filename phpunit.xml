@@ -18,7 +18,7 @@
         </whitelist>
     </filter>
     <listeners>
-        <listener class="Tests\DatabaseTestListener"/>
+        <listener class="BrandonBest\UnittestSqlite\DatabaseTestListener"/>
     </listeners>
     <php>
         <server name="APP_ENV" value="testing"/>
