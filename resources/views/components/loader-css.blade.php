@@ -45,7 +45,33 @@
         bottom: 0;
         left: 0;
         right: 0;
+        animation: pulse 1s infinite;
     }
+
+    @keyframes pulse {
+        0% {
+            background-size: 150px 150px;
+        }
+        30% {
+            background-size: 150px 150px;
+        }
+        40% {
+            background-size: 170px 170px;
+        }
+        50% {
+            background-size: 160px 160px;
+        }
+        60% {
+            background-size: 190px 190px;
+        }
+        30% {
+            background-size: 150px 150px;
+        }
+        100% {
+            background-size: 150px 150px;
+        }
+    }
+
     #app-loader .logo-repeat {
         background-image: url('/images/brandon-best-icon.png');
         background-size: 30px 30px;

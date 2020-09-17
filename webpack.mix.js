@@ -22,6 +22,7 @@ mix.js('resources/js/app.js', 'public/js')
     ], 'public/js/all.js')
     .sass('resources/sass/app.scss', 'public/css');
 
+mix.copyDirectory( 'resources/assets/images/favicon', 'public' );
 mix.copyDirectory( 'resources/assets/images', 'public/images' );
 mix.copyDirectory( 'resources/assets/resumes', 'public/resumes' );
 mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/webfonts');

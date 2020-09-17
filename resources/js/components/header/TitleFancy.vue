@@ -1,7 +1,6 @@
 <template>
     <div>
         <section class="home-bg section h-100vh clip-home" id="home">
-            <div class="bg-overlay"></div>
             <div class="bg-overlay-images"></div>
             <div class="home-table">
                 <div class="home-table-center">

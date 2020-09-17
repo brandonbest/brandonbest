@@ -13,10 +13,11 @@ class CreateSkillsTables extends Migration
      */
     public function up()
     {
-        Schema::create('skills', function (Blueprint $table) {
+        Schema::create('skill_sections', function (Blueprint $table) {
             $table->id();
-            $table->string('skill')->nullable();
-            $table->integer('skill_level')->default(100);
+            $table->string('section')->nullable();
+            $table->string('icon', 75)->nullable();
+            $table->integer('sort');
             $table->string('description', 500)->nullable();
             $table->timestamps();
         });
@@ -24,8 +25,17 @@ class CreateSkillsTables extends Migration
         Schema::create('skill_categories', function (Blueprint $table) {
             $table->id();
             $table->string('category')->nullable();
+            $table->unsignedBigInteger('skill_section_id');
             $table->string('icon', 75)->nullable();
             $table->integer('sort');
+            $table->string('description', 500)->nullable();
+            $table->timestamps();
+        });
+
+        Schema::create('skills', function (Blueprint $table) {
+            $table->id();
+            $table->string('skill')->nullable();
+            $table->integer('skill_level')->default(100);
             $table->string('description', 500)->nullable();
             $table->timestamps();
         });
@@ -41,10 +51,10 @@ class CreateSkillsTables extends Migration
             $table->foreign('skill_category_id')->references('id')->on('skill_categories')->onDelete('cascade');
         });
 
-        Schema::create('skill_subcategories', function (Blueprint $table) {
+        Schema::create('skill_line_item', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('skill_id');
-            $table->string('subcategory')->nullable();
+            $table->string('line_item')->nullable();
             $table->string('description', 500)->nullable();
             $table->integer('sort');
             $table->timestamps();

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <PageTitle title="Cookie Policy" subtitle="Last updated July 26, 2020" link="/legal" link-title="Legal"></PageTitle>
+        <PageTitle title="Cookie Policy" subtitle="Last updated July 26, 2020" router-name="legal" router-title="Legal"></PageTitle>
 
         <section class="section section-legal">
             <div class="container">

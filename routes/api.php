@@ -30,6 +30,11 @@ Route::prefix('companies')->group(function() {
     Route::get('{company}/projects/{project}', 'CompaniesController@project');
 });
 
+Route::prefix('legal')->group(function() {
+    Route::get('/', 'LegalController@all');
+    Route::get('{legal}', 'LegalController@legal');
+});
+
 Route::prefix('projects')->group(function() {
     Route::get('/', 'ProjectsController@all');
     Route::get('{project}', 'ProjectsController@single');

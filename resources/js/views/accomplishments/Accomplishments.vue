@@ -13,19 +13,20 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div id="accordion">
-                            <div class="row">
-                                <div class="col-xl-4">
-                                    <div class="card mb-2" v-for="accomplishment in this.accomplishments" v-show="$route.params.slug !== accomplishment.slug">
-                                        <div class="card-header bg-transparent p-0">
-                                            <h5 class="mb-0">
-                                                <router-link class="btn btn-link" :to="{ name: 'accomplishments.accomplishment', params: {slug: accomplishment.slug} }">
-                                                    <i v-bind:class="accomplishment.icon"></i>
-                                                    <h5 class="font-weight-bold" v-html="accomplishment.title"></h5>
-                                                    <p class="mt-3 text-muted mb-0" v-show="accomplishment.tagline" v-html="accomplishment.tagline"></p>
-                                                </router-link>
-                                            </h5>
-                                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <ComponentLoader v-bind:show-loader="this.showAccomplishmentLoader"></ComponentLoader>
+                            </div>
+                            <div class="col-xl-4" v-for="accomplishment in this.accomplishments" v-show="$route.params.slug !== accomplishment.slug">
+                                <div class="card mb-2">
+                                    <div class="card-header bg-transparent p-0">
+                                        <h5 class="mb-0">
+                                            <router-link class="btn btn-link" :to="{ name: 'accomplishments.accomplishment', params: {slug: accomplishment.slug} }">
+                                                <i v-bind:class="accomplishment.icon"></i>
+                                                <h5 class="font-weight-bold" v-html="accomplishment.title"></h5>
+                                                <p class="mt-3 text-muted mb-0" v-show="accomplishment.tagline" v-html="accomplishment.tagline"></p>
+                                            </router-link>
+                                        </h5>
                                     </div>
                                 </div>
                             </div>
@@ -38,6 +39,9 @@
 </template>
 
 <style lang="scss">
+    .section-accomplishments .component-loader {
+        min-height: 600px;
+    }
     .section-accomplishments .card .card-header {
         border: 1px dotted #e7e7e7;
         position: relative;
@@ -69,8 +73,10 @@
 </style>
 f
 <script>
+    import ComponentLoader from "../../components/component-loader";
     export default {
         name: 'accomplishments.overview',
+        components: {ComponentLoader},
         computed: {
             currentRouteName() {
                 return this.$route.name;
@@ -78,7 +84,8 @@ f
         },
         data() {
             return {
-                'accomplishments': {}
+                'accomplishments': {},
+                'showAccomplishmentLoader': true
             }
         },
         mounted() {
@@ -86,6 +93,7 @@ f
 
             axios.get('/api/accomplishments').then((response) => {
                 this.accomplishments = response.data.data;
+                this.showAccomplishmentLoader = false;
             });
         }
     }

@@ -20231,3 +20231,82 @@ button:focus {
   left: 0;
   right: 0;
 }
+
+.component-loader {
+  background-color: #ddd;
+  min-height: 300px;
+  position: relative;
+}
+
+.component-loader .logo {
+  background-image: url("/images/brandon-best-icon-black.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-animation: loader-pulse 1s infinite;
+          animation: loader-pulse 1s infinite;
+}
+
+.component-loader .logo-repeat {
+  background-image: url("/images/brandon-best-icon-black.png");
+  background-size: 30px 30px;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@-webkit-keyframes loader-pulse {
+  0% {
+    background-size: 80px 80px;
+  }
+  30% {
+    background-size: 80px 80px;
+  }
+  40% {
+    background-size: 100px 100px;
+  }
+  50% {
+    background-size: 90px 90px;
+  }
+  60% {
+    background-size: 120px 120px;
+  }
+  30% {
+    background-size: 80px 80px;
+  }
+  100% {
+    background-size: 80px 80px;
+  }
+}
+
+@keyframes loader-pulse {
+  0% {
+    background-size: 80px 80px;
+  }
+  30% {
+    background-size: 80px 80px;
+  }
+  40% {
+    background-size: 100px 100px;
+  }
+  50% {
+    background-size: 90px 90px;
+  }
+  60% {
+    background-size: 120px 120px;
+  }
+  30% {
+    background-size: 80px 80px;
+  }
+  100% {
+    background-size: 80px 80px;
+  }
+}

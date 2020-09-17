@@ -1,6 +1,6 @@
 <template>
     <div>
-        <PageTitle title="Terms of Use" subtitle="Last updated July 26, 2020"></PageTitle>
+        <PageTitle title="Terms of Use" subtitle="Last updated July 26, 2020" router-name="legal" router-title="Legal"></PageTitle>
 
         <section class="section section-legal">
             <div class="container">

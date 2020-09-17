@@ -18,6 +18,9 @@
                             <div class="header_btn" v-show="link && linkTitle">
                                 <a v-bind:href="link" class="btn btn-outline-custom btn-rounded mt-4">{{ this.linkTitle }}</a>
                             </div>
+                            <div class="header_btn" v-show="routerName && routerTitle">
+                                <router-link class="btn btn-outline-custom btn-rounded mt-4" :to="{ name: this.routerName }">{{ this.routerTitle }}</router-link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -28,7 +31,7 @@
 
 <style>
     .header_section {
-        background-image: url('/images/img-1.jpg');
+        background-image: url("/images/img-1.jpg");
     }
 </style>
 
@@ -52,6 +55,12 @@
                 type: String
             },
             link: {
+                type: String
+            },
+            routerName: {
+                type: String
+            },
+            routerTitle: {
                 type: String
             }
         },

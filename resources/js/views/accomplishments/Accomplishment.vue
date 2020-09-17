@@ -89,7 +89,7 @@
     import FooterBottom from "../../components/footer/FooterBottom";
     import Accomplishments from "./Accomplishments";
     export default {
-        name: 'accomplishments.overview',
+        name: 'accomplishments.accomplishment',
         components: {Accomplishments, FooterBottom, FooterTop, PageTitle},
         computed: {
             currentRouteName() {
@@ -103,8 +103,10 @@
         },
         methods: {
             fetchAccomplishment () {
+                $('.router-view').fadeOut(100);
                 axios.get('/api/accomplishments/' + this.$route.params.slug).then((response) => {
                     this.accomplishment = response.data.data;
+                    $('.router-view').fadeIn(500);
                 });
             }
         },

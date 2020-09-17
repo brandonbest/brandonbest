@@ -6,7 +6,7 @@ const routes = [
     },
     {
         path: '/about',
-        component: () => import("./views/EmptyRouterView"),
+        component: () => import("./views/App"),
         children: [
             {
                 path: '',
@@ -33,7 +33,7 @@ const routes = [
     },
     {
         path: '/accomplishments',
-        component: () => import("./views/EmptyRouterView"),
+        component: () => import("./views/App"),
         children: [
             {
                 path: '',
@@ -63,7 +63,7 @@ const routes = [
     },
     {
         path: '/experience',
-        component: () => import("./views/EmptyRouterView"),
+        component: () => import("./views/App"),
         children: [
             {
                 path: '',
@@ -99,7 +99,7 @@ const routes = [
     },
     {
         path: '/legal',
-        component: () => import("./views/EmptyRouterView"),
+        component: () => import("./views/App"),
         children: [
             {
                 path: '',
@@ -111,7 +111,7 @@ const routes = [
                 path: 'data',
                 name: 'legal.data',
                 meta: { title: 'Brandon Best Data Request'},
-                component: () => import("./views/legal/data"),
+                component: () => import("./views/legal/Data"),
             },
             {
                 path: 'privacy',
