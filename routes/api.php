@@ -42,6 +42,8 @@ Route::prefix('projects')->group(function() {
 
 Route::get('skills', 'SkillsController@all');
 Route::get('skills/categories', 'SkillsController@categories');
+Route::get('skills/sections', 'SkillsController@sections');
+Route::get('skills/sections/{section}', 'SkillsController@section');
 
 Route::get('/', 'ApiController@api');
 Route::get('{any}', 'ErrorController@error404');

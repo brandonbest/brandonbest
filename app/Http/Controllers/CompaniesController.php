@@ -16,8 +16,9 @@ class CompaniesController extends Controller
         return CompanyResource::collection($companies);
     }
 
-    public function single(Company $company)
+    public function single(string $slug)
     {
+        $company = Company::where('slug', $slug)->take(1)->first();
         return new CompanyResource($company);
     }
 

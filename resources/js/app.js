@@ -1,4 +1,5 @@
 require('./bootstrap');
+require('./fake.scss');
 
 import Vue from 'vue'
 import App from './views/App'

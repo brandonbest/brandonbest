@@ -34,6 +34,17 @@ class CreateImagesTable extends Migration
             $table->boolean('active')->default('1');
             $table->timestamps();
         });
+
+        Schema::create('file_images', function (Blueprint $table) {
+            $table->id();
+            $this->unsignedBigInteger('file_id');
+            $this->unsignedBigInteger('image_id');
+            $table->timestamps();
+
+            $table->foreign('file_id')->references('id')->on('files')->onDelete('cascade');
+            $table->foreign('image_id')->references('id')->on('images')->onDelete('cascade');
+        });
+
     }
 
     /**

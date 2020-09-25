@@ -18,7 +18,8 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x  | bash - \
     && apt -y install nodejs \
     && npm install \
     && npm install jquery-easing \
-    && npm install magnific-popup
+    && npm install magnific-popup \
+    && npm install -D sass-loader node-sass sass
 
 RUN npm install @fortawesome/fontawesome-free
 

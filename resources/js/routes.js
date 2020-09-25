@@ -72,29 +72,11 @@ const routes = [
                 component: () => import("./views/Experience"),
             },
             {
-                path: 'bisnow',
-                name: 'experience.bisnow',
+                path: ':slug',
+                name: 'experience.company',
                 meta: { title: 'Bisnow' },
-                component: () => import("./views/companies/Bisnow"),
-            },
-            {
-                path: 'dream-ideation',
-                name: 'experience.dream-ideation',
-                meta: { title: 'Dream Ideation' },
-                component: () => import("./views/companies/DreamIdeation"),
-            },
-            {
-                path: 'mesa-public-schools',
-                name: 'experience.mesa-public-schools',
-                meta: { title: 'Mesa Public Schools' },
-                component: () => import("./views/companies/MesaPublicSchools"),
-            },
-            {
-                path: 'rich-hessler-solar',
-                name: 'experience.rich-hessler-solar',
-                meta: { title: 'Bisnow' },
-                component: () => import("./views/companies/RichHessler"),
-            },
+                component: () => import("./views/companies/Company"),
+            }
         ]
     },
     {
@@ -114,16 +96,10 @@ const routes = [
                 component: () => import("./views/legal/Data"),
             },
             {
-                path: 'privacy',
-                name: 'legal.privacy',
-                meta: { title: 'Brandon Best Privacy Policy'},
-                component: () => import("./views/legal/Privacy"),
-            },
-            {
-                path: 'terms-of-use',
-                name: 'legal.terms',
-                meta: { title: 'Brandon Best Terms' },
-                component: () => import("./views/legal/TermsOfUse"),
+                path: ':slug',
+                name: 'Legal.Sections',
+                meta: { title: 'Brandon Best Legal' },
+                component: () => import("./views/legal/LegalSections"),
             },
         ]
     },

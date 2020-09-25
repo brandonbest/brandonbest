@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class LegalResource extends JsonResource
+class SkillSectionResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -15,13 +15,10 @@ class LegalResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'id' => $this->id,
-            'title' => $this->title,
-            'slug' => $this->slug,
-            'overview' => $this->overview,
+            'section' => $this->section,
             'icon' => $this->icon,
-            'html' => $this->html,
-            'updated_date' => $this->updated_at->format('F j, Y')
+            'description' => $this->description,
+            'categories' => SkillCategoryResource::collection($this->categories),
         ];
     }
 }

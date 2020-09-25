@@ -13,7 +13,7 @@ class LegalController extends Controller
     {
         $legal = DB::transaction(function() {
             $activeIds = Legal::select('slug', DB::raw('MAX(id) as id'))->active()->sort()->groupBy('slug')->get();
-            return Legal::select('id','title','slug','overview','icon')->active()->sort('sort', 'ASC')->sort()->whereIn('id', $activeIds->pluck('id')->toArray())->get();
+            return Legal::select('id','title','slug','overview','icon', 'updated_at')->active()->sort('sort', 'ASC')->sort()->whereIn('id', $activeIds->pluck('id')->toArray())->get();
         }, 2);
 
         return LegalResource::collection($legal);

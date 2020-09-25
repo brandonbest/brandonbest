@@ -6,14 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Skill extends Model
 {
-    public function all(Request $request)
+    public function lineItems()
     {
-        $accomplishments = Accomplishment::active()->sort()->get();
-        return AccomplishmentResource::collection($accomplishments);
-    }
-
-    public function single(Accomplishment $accomplishment)
-    {
-        return new AccomplishmentResource($accomplishment);
+        return $this->hasMany(SkillLineItem::class)->sort();
     }
 }

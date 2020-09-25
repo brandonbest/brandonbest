@@ -51,7 +51,7 @@ class CreateSkillsTables extends Migration
             $table->foreign('skill_category_id')->references('id')->on('skill_categories')->onDelete('cascade');
         });
 
-        Schema::create('skill_line_item', function (Blueprint $table) {
+        Schema::create('skill_line_items', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('skill_id');
             $table->string('line_item')->nullable();
@@ -70,9 +70,10 @@ class CreateSkillsTables extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('skill_line_items');
+        Schema::dropIfExists('skill_categories_pivot');
         Schema::dropIfExists('skills');
         Schema::dropIfExists('skill_categories');
-        Schema::dropIfExists('skill_categories_pivot');
-        Schema::dropIfExists('skill_subcategories');
+        Schema::dropIfExists('skill_sections');
     }
 }

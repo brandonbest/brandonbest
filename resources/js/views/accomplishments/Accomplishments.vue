@@ -89,8 +89,6 @@ f
             }
         },
         mounted() {
-            $('.collapse').collapse();
-
             axios.get('/api/accomplishments').then((response) => {
                 this.accomplishments = response.data.data;
                 this.showAccomplishmentLoader = false;

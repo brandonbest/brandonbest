@@ -17,6 +17,7 @@ class CreateCompaniesTable extends Migration
             $table->id();
             $table->string('company')->nullable();
             $table->string('slug')->nullable();
+            $table->text('tagline')->nullable();
             $table->text('description')->nullable();
             $table->text('impact')->nullable();
             $table->string('logo_src')->nullable();
@@ -24,6 +25,8 @@ class CreateCompaniesTable extends Migration
             $table->string('website_link')->nullable();
             $table->date('date_start')->nullable();
             $table->date('date_end')->nullable();
+            $table->boolean('active')->default(0);
+            $table->tinyInteger('sort')->default(0);
             $table->timestamps();
         });
     }
