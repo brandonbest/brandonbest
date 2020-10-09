@@ -10,7 +10,7 @@ class AccomplishmentsController extends Controller
 {
     public function all(Request $request)
     {
-        $accomplishments = Accomplishment::active()->sort()->get();
+        $accomplishments = Accomplishment::active()->sort()->sortId()->get();
         return AccomplishmentResource::collection($accomplishments);
     }
 

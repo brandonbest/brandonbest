@@ -16,4 +16,27 @@ class Accomplishment extends Model
     {
         return $query->where('slug', $slug);
     }
+
+    /**
+     * @return Accomplishment|null
+     */
+    public function getLinkNextAttribute()
+    {
+        $accomplishment = Accomplishment::active()->sort()->sortId()
+            ->where('sort', '>=', $this->sort)
+            ->where('id', '>', $this->id)
+            ->take(1)->first();
+
+        return $accomplishment ?? null;
+    }
+
+    public function getLinkPreviousAttribute()
+    {
+        $accomplishment = Accomplishment::active()->sort('DESC')->sortId('id', 'DESC')
+            ->where('sort', '<=', $this->sort)
+            ->where('id', '<', $this->id)
+            ->take(1)->first();
+
+        return $accomplishment ?? null;
+    }
 }

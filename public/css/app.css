@@ -18712,9 +18712,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .timeline .circle {
-  padding: 13px 20px;
+  padding: 18px 20px;
   border-radius: 50%;
-  background-color: #075f98;
+  background-color: #000;
   color: #fff;
   max-height: 54px;
   z-index: 2;
@@ -18737,7 +18737,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .timeline .timeline-item hr {
-  border-top: 3px solid #075f98;
+  border-top: 3px solid #000;
   margin: 0;
   top: 17px;
   position: relative;
@@ -18749,7 +18749,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .timeline .timeline-item .corner {
-  border: 3px solid #075f98;
+  border: 3px solid #000;
   width: 100%;
   position: relative;
   border-radius: 15px;
@@ -18782,7 +18782,7 @@ a.text-dark:hover, a.text-dark:focus {
 .timeline .timeline-end.row .col-2::after {
   content: "";
   position: absolute;
-  border-left: 3px solid #075f98;
+  border-left: 3px solid #000;
   z-index: 1;
 }
 
@@ -19085,6 +19085,7 @@ button:focus {
   background-color: #000;
   border: 2px solid #000;
   color: #fff;
+  font-size: 15px;
   transition: all 0.5s;
   font-size: 15px;
   text-transform: capitalize;

@@ -22,7 +22,7 @@
     import FooterBottom from "../../components/footer/FooterBottom";
 
     export default {
-        name: 'Legal.Sections',
+        name: 'legal.sections',
         components: {FooterBottom, FooterTop, PageTitle},
         computed: {
             currentRouteName() {

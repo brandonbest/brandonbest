@@ -1,76 +1,33 @@
 <template>
     <div>
-        <PageTitle v-bind:title="this.accomplishment.title" v-bind:subtitle="this.accomplishment.tagline"></PageTitle>
+        <PageTitle v-bind:title="this.accomplishment.title" v-bind:subtitle="this.accomplishment.tagline" v-bind:icon="this.accomplishment.icon"></PageTitle>
 
-        <Accomplishments></Accomplishments>
-
-        <section id="companies" class="section bg-light">
+        <section class="section section-accomplishment bg-light pb-0">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="text-center mx-auto section-main-title">
-                            <h2><span class="font-weight-bold">Companies</span></h2>
-                            <div class="main-title-border mt-2 mb-2"><i class="far fa-building ml-2 mr-2"></i></div>
-                        </div>
+                <div class="row">
+                    <div class="col-lg-12" v-html="this.accomplishment.description"></div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-6 text-left">
+                        <router-link v-if="this.accomplishment.links.previous.slug && this.accomplishment.links.previous.title" class="btn btn-xs btn-outline-black btn-custom btn-rounded mt-3" :to="{ name: 'accomplishments.accomplishment', params: {slug: this.accomplishment.links.previous.slug} }">
+                            <i class="fas fa-caret-left mr-2"></i> {{this.accomplishment.links.previous.title}}
+                        </router-link>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <router-link v-if="this.accomplishment.links.next.slug && this.accomplishment.links.next.title" class="btn btn-xs btn-outline-black btn-custom btn-rounded mt-3" :to="{ name: 'accomplishments.accomplishment', params: {slug: this.accomplishment.links.next.slug} }">
+                            {{this.accomplishment.links.next.title}} <i class="ml-2 fas fa-caret-right"></i>
+                        </router-link>
                     </div>
                 </div>
-                <div class="row mt-4 pt-4">
-                    <div class="col-lg-3">
-                        <div class="lan_box_ser text-center rounded p-4 mt-3">
-                            <div class="ser_icon">
-                                <img src="/images/companies/bisnow.jpg" alt="Bisnow" />
-                            </div>
-                            <div class="service-content mt-1">
-                                <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is
-                                    reproduced below for those interested.</p></div>
-                            <div>
-                                <a href="#bisnow" class="btn btn-xs btn-outline-black btn-rounded mt-3">Accomplishments</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="lan_box_ser text-center rounded p-4 mt-3">
-                            <div class="ser_icon">
-                                <img src="/images/companies/dream-ideation.jpg" alt="Dream Ideation" />
-                            </div>
-                            <div class="service-content mt-1">
-                                <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is
-                                    reproduced below for those interested.</p>
-                            </div>
-                            <div>
-                                <a href="#dream-ideation" class="btn btn-xs btn-outline-black btn-rounded mt-3">Accomplishments</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="lan_box_ser text-center rounded p-4 mt-3">
-                            <div class="ser_icon">
-                                <img src="/images/companies/rich-hessler.jpg" alt="Rich Hessler" />
-                            </div>
-                            <div class="service-content mt-1">
-                                <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is
-                                    reproduced below for those interested.</p></div>
-                            <div>
-                                <a href="#rich-hessler" class="btn btn-xs btn-outline-black btn-rounded mt-3">Accomplishments</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="lan_box_ser text-center rounded p-4 mt-3">
-                            <div class="ser_icon">
-                                <img src="/images/companies/mesa-public-schools.jpg" alt="Mesa Public Schools" />
-                            </div>
-                            <div class="service-content mt-1">
-                                <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is
-                                    reproduced below for those interested.</p></div>
-                            <div>
-                                <a href="#mesa-schools" class="btn btn-xs btn-outline-black btn-rounded mt-3">Accomplishments</a>
-                            </div>
-                        </div>
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <hr />
                     </div>
                 </div>
             </div>
         </section>
+
+        <Accomplishments></Accomplishments>
 
         <FooterTop></FooterTop>
         <FooterBottom></FooterBottom>
@@ -78,8 +35,23 @@
 </template>
 
 <style lang="scss">
-    #companies img {
-        max-width: 100%;
+    .section-accomplishment {
+        font-size: 16px;
+        line-height: 18px;
+
+        h2, h3 {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+        ul, ol, p {
+            padding-bottom: 10px;
+        }
+        ul, ol {
+            padding-left: 30px;
+        }
     }
 </style>
 
@@ -88,9 +60,10 @@
     import FooterTop from "../../components/footer/FooterTop";
     import FooterBottom from "../../components/footer/FooterBottom";
     import Accomplishments from "./Accomplishments";
+    import Companies from "./../companies/All";
     export default {
         name: 'accomplishments.accomplishment',
-        components: {Accomplishments, FooterBottom, FooterTop, PageTitle},
+        components: {Accomplishments, Companies, FooterBottom, FooterTop, PageTitle},
         computed: {
             currentRouteName() {
                 return this.$route.name;

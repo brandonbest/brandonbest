@@ -97,7 +97,7 @@ const routes = [
             },
             {
                 path: ':slug',
-                name: 'Legal.Sections',
+                name: 'legal.sections',
                 meta: { title: 'Brandon Best Legal' },
                 component: () => import("./views/legal/LegalSections"),
             },

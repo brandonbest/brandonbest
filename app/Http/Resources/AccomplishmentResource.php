@@ -14,6 +14,9 @@ class AccomplishmentResource extends JsonResource
      */
     public function toArray($request)
     {
+        $linkNext = optional($this->link_next);
+        $linkPrevious = optional($this->link_previous);
+
         return [
             'id' => $this->id,
             'title' => $this->title,
@@ -21,6 +24,21 @@ class AccomplishmentResource extends JsonResource
             'tagline' => $this->tagline,
             'icon' => $this->icon,
             'description' => $this->description,
+
+            'links' => [
+                'next' => [
+                    'id' => $linkNext->id,
+                    'title' => $linkNext->title,
+                    'slug' => $linkNext->slug,
+                    'icon' => $linkNext->icon,
+                ],
+                'previous' => [
+                    'id' => $linkPrevious->id,
+                    'title' => $linkPrevious->title,
+                    'slug' => $linkPrevious->slug,
+                    'icon' => $linkPrevious->icon,
+                ],
+            ]
         ];
     }
 }

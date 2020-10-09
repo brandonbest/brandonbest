@@ -444,7 +444,7 @@
     import FooterBottom from "../../components/footer/FooterBottom";
 
     export default {
-        name: 'Privacy',
+        name: 'legal.privacy',
         components: {FooterBottom, FooterTop, PageTitle},
         computed: {
             currentRouteName() {

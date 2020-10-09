@@ -10,4 +10,9 @@ trait TraitScopeSort
     {
         return $q->orderBy('sort', $direction);
     }
+
+    public function scopeSortId(Builder $q, string $idColumn='id', string $direction = 'ASC'): Builder
+    {
+        return $q->orderBy($idColumn, $direction);
+    }
 }

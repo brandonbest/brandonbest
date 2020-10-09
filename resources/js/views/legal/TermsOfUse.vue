@@ -804,7 +804,7 @@
     import FooterBottom from "../../components/footer/FooterBottom";
 
     export default {
-        name: 'TermsOfUse',
+        name: 'legal.terms',
         components: {FooterBottom, FooterTop, PageTitle},
         computed: {
             currentRouteName() {

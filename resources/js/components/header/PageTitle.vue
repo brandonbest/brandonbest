@@ -8,6 +8,7 @@
                     <div class="col-lg-12">
                         <div class="text-white text-center">
                             <h2 class="font-weight-bold" v-html="this.title"></h2>
+                            <div class="main-title-border mt-3" v-if="this.icon"><i class="ml-2 mr-2" v-bind:class="this.icon"></i></div>
                             <div class="home_divider mt-3 mb-3 mx-auto"></div>
                             <div class="page_link" v-show="this.subtitle">
                                 <span class="text-white ml-1" v-html="this.subtitle"></span>
@@ -49,6 +50,9 @@
                 type: String
             },
             downloadLink: {
+                type: String
+            },
+            icon: {
                 type: String
             },
             linkTitle: {

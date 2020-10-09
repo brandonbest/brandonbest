@@ -14,7 +14,7 @@
                                 <i v-bind:class="legalLink.icon" class="mb-3"></i>
                                 <h4 class="card-title">{{ legalLink.title }}</h4>
                                 <p class="card-text" v-html="legalLink.overview"></p>
-                                <router-link class="nav-link btn btn-xs btn-outline-black btn-rounded mt-2" :to="{ name: 'Legal.Sections', params: {slug: legalLink.slug} }">{{ legalLink.title }}</router-link>
+                                <router-link class="nav-link btn btn-xs btn-outline-black btn-rounded mt-2" :to="{ name: 'legal.sections', params: {slug: legalLink.slug} }">{{ legalLink.title }}</router-link>
                             </div>
                         </div>
                     </div>

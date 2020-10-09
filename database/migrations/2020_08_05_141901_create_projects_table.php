@@ -16,12 +16,13 @@ class CreateProjectsTable extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('subtitle');
-            $table->text('description');
+            $table->string('subtitle')->nullable();
+            $table->text('description')->nullable();
             $table->unsignedBigInteger('company_id');
             $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
             $table->date('date_start')->nullable();
             $table->date('date_end')->nullable();
+            $table->integer('sort')->default('0');
             $table->boolean('active')->default('0');
             $table->timestamps();
         });

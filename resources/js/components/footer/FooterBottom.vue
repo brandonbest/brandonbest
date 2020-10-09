@@ -17,10 +17,10 @@
                                 <router-link class="nav-link" :to="{ name: 'legal' }">Legal</router-link>
                             </li>
                             <li class="nav-item">
-                                <router-link class="nav-link" :to="{ name: 'legal.privacy' }">Privacy</router-link>
+                                <router-link class="nav-link" :to="{ name: 'legal.sections', params: {slug: 'privacy'} }">Privacy</router-link>
                             </li>
                             <li class="nav-item">
-                                <router-link class="nav-link" :to="{ name: 'legal.terms' }">Terms of Use</router-link>
+                                <router-link class="nav-link" :to="{ name: 'legal.sections', params: {slug: 'terms'} }">Terms of Use</router-link>
                             </li>
                         </ul>
                     </div>

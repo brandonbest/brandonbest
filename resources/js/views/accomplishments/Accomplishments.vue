@@ -18,7 +18,7 @@
                                 <ComponentLoader v-bind:show-loader="this.showAccomplishmentLoader"></ComponentLoader>
                             </div>
                             <div class="col-xl-4" v-for="accomplishment in this.accomplishments" v-show="$route.params.slug !== accomplishment.slug">
-                                <div class="card mb-2">
+                                <div class="card mb-4">
                                     <div class="card-header bg-transparent p-0">
                                         <h5 class="mb-0">
                                             <router-link class="btn btn-link" :to="{ name: 'accomplishments.accomplishment', params: {slug: accomplishment.slug} }">

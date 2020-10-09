@@ -23,6 +23,11 @@ Route::prefix('accomplishments')->group(function() {
     Route::get('{accomplishment}', 'AccomplishmentsController@single');
 });
 
+Route::prefix('blog')->group(function() {
+    Route::get('/', 'BlogController@recent');
+    Route::get('{post}', 'BlogPostController@single');
+});
+
 Route::prefix('companies')->group(function() {
     Route::get('/', 'CompaniesController@all');
     Route::get('{company}', 'CompaniesController@single');
@@ -38,6 +43,10 @@ Route::prefix('legal')->group(function() {
 Route::prefix('projects')->group(function() {
     Route::get('/', 'ProjectsController@all');
     Route::get('{project}', 'ProjectsController@single');
+});
+
+Route::prefix('resume')->group(function() {
+    Route::get('latest', 'ResumeController@latest');
 });
 
 Route::get('skills', 'SkillsController@all');

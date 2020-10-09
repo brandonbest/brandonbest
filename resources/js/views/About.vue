@@ -1,6 +1,7 @@
 <template>
     <div>
         <PageTitle title="About Brandon" subtitle="Who is Brandon?"></PageTitle>
+        <Companies></Companies>
         <section class="section">
             <div class="container">
                 <div class="row">
@@ -79,14 +80,14 @@
                 </div>
             </div>
         </section>
-        <section class="section bg-cta">
+        <section class="section bg-cta" style="background-image: url('/images/pages/family.jpg');">
             <div class="bg-overlay"></div>
             <div class="container text-light">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-center mx-auto section-main-title mb-4"><h2><span
                                 class="font-weight-bold">Family</span></h2>
-                            <div class="main-title-border mt-2 mb-2"><i class="fas fa-graduation-cap ml-2 mr-2"></i>
+                            <div class="main-title-border mt-2 mb-2"><i class="fas fa-users ml-2 mr-2"></i>
                             </div>
                         </div>
                         <p class="text-center mx-auto mt-2">Brandon grew up in Grayslake, Illinois and Scottsdale,
@@ -116,9 +117,7 @@
                             <div class="ser_icon"><i class="fas fa-hiking"></i></div>
                             <div class="service-content mt-4">
                                 <h5 class="font-weight-bold">Hiking</h5>
-                                <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is
-                                    reproduced below for those interested.</p>
-                                <router-link class="btn btn-xs btn-outline-black btn-rounded mt-4" :to="{ name: 'about.hiking' }">Learn More</router-link>
+                                <p class="mt-3 text-muted mb-0">Easily my favorite way to pass time. I recharge with my heart beating in the woods.</p>
                             </div>
                         </div>
                     </div>
@@ -126,16 +125,14 @@
                         <div class="lan_box_ser text-center rounded p-4 mt-3">
                             <div class="ser_icon"><i class="fas fa-tree"></i></div>
                             <div class="service-content mt-4"><h5 class="font-weight-bold">Landscaping</h5>
-                                <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is
-                                    reproduced below for those interested.</p></div>
+                                <p class="mt-3 text-muted mb-0">I designed and created my backyard including trees, turf, gas fire pit and electrical.</p></div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="lan_box_ser text-center rounded p-4 mt-3">
                             <div class="ser_icon"><i class="fas fa-pencil-ruler"></i></div>
-                            <div class="service-content mt-4"><h5 class="font-weight-bold">Wood Work</h5>
-                                <p class="mt-3 text-muted mb-0">The standard chunk of Lorem Ipsum used since the is
-                                    reproduced below for those interested.</p></div>
+                            <div class="service-content mt-4"><h5 class="font-weight-bold">Carpentry</h5>
+                                <p class="mt-3 text-muted mb-0">I enjoy working with my hands and improving the value of my family's home with storage, trim and small furniture.</p></div>
                         </div>
                     </div>
                 </div>
@@ -147,13 +144,14 @@
 </template>
 
 <script>
+    import Companies from "./companies/All";
     import PageTitle from "../components/header/PageTitle";
     import FooterTop from "../components/footer/FooterTop";
     import FooterBottom from "../components/footer/FooterBottom";
 
     export default {
         name: 'About',
-        components: {FooterBottom, FooterTop, PageTitle},
+        components: {Companies, FooterBottom, FooterTop, PageTitle},
         computed: {
             currentRouteName() {
                 return this.$route.name;
